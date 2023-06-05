@@ -1,0 +1,75 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_header-two.html')
+
+@@include('../partials/_breadcumb.html', {
+    "breadcumbText": "Log in"
+})
+  <!--=======-** Login start **-=======-->
+    <section class="account bg-img login py-80 position-relative">
+        <img class="login-bg-img" src="assets/images/footer/login-bg.png" alt="">
+        <div class="account-inner">
+            <div class="container">
+                <div class="row gy-4 justify-content-end">
+                    <div class="col-lg-6">
+                        <div class="account-form">
+                            <div class="account-form__content mb-4">
+                                <h3 class="account-form__title mb-2"> Sign Up Your Account </h3>
+                                <p class="account-form__desc">Please input your username and password and login to your account to get access to your dashboard.</p>
+                            </div>
+                            <form action="#" method="POST">
+                                <div class="row gy-3">
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="name" class="form--label"> Name</label>
+                                            <input type="text" class="form--control" id="name" placeholder=" Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <label for="email" class="form--label">Email Address</label>
+                                            <input type="text" class="form--control" id="email" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <label for="your-password" class="form--label">Password</label>
+                                        <div class="input-group">
+                                            <input id="your-password" type="password" class="form-control form--control" value="Password">
+                                            <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#your-password"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <div class="form--check">
+                                                <input class="form-check-input" type="checkbox" value="" id="remember">
+                                                <label class="form-check-label" for="remember">Remember me </label>
+                                            </div>
+                                            <a href="forgot-password.html" class="forgot-password text--base">Forgot Your Password?</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn--base w-100">
+                                            Sign In <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                                            <span style="top: 40.6094px; left: 80px;"></span>
+                                        </button>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="have-account text-center">
+                                            <p class="have-account__text">Don't Have An Account? <a href="registration.html" class="have-account__link text--base">Create Account</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--=======-** Login End **-=======-->
+
+<!-- Footer -->
+@@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')

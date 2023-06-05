@@ -1,0 +1,71 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_header-two.html')
+
+@@include('../partials/_breadcumb.html', {
+    "breadcumbText": "Profile"
+})
+
+
+<!-- ==================== Dashboard Start Here ==================== -->
+ <div class="dashboard py-60 section-bg-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 pe-xl-4">
+                @@include('../partials/_sidebar-menu.html')
+            </div>
+            <div class="col-xl-9 col-lg-8">
+                <div class="dashboard-body">
+                    <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="user-profile">
+                                <form action="#" method="POST">
+                                    <div class="row gy-3">
+                                        <div class="col-sm-12">
+                                            <h4 class="mb-1">Personal Information</h4>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="name" class="form--label"> First Name</label>
+                                                <input type="text" class="form--control" id="name" placeholder=" First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="lastname" class="form--label"> Last Name</label>
+                                                <input type="text" class="form--control" id="lastname" placeholder=" Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="email" class="form--label">Your Email </label>
+                                                <input type="text" class="form--control" id="email" placeholder="Your Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label for="your-password" class="form--label">Password</label>
+                                            <div class="input-group">
+                                                <input id="your-password" type="password" class="form-control form--control" value="Password">
+                                                <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#your-password"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <button type="submit" class="btn btn--base w-100">Save Now</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</div> 
+<!-- ==================== Dashbaord End Here ==================== -->
+
+<!-- Footer -->
+@@include('../partials/_footer.html')
+@@include('../partials/_template-bottom.html')

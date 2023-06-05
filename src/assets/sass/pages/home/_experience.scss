@@ -1,0 +1,73 @@
+/*====================== Experience ====================*/
+.experience-area {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: hsl(var(--dark)/0.92);
+        top: 0;
+        left: 0;
+    }
+    .section-heading__title {
+        color: hsl(var(--white));
+    }
+}
+
+.experience {
+    transition: all .4s ease-in-out;
+    text-align: center;
+    overflow: hidden;
+    &__icon {
+        margin-bottom: 10px;
+        position: relative;
+        box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+        border-radius: var(--border-radius);
+        // padding: 30px 30px 35px;
+        border: 2px solid hsl(var(--base)/.8);
+        transition: all .6s ease-in-out;
+        display: inline-block;
+        h3 {
+            position: relative;
+            margin: 0;
+            padding: 8px 13px;
+            span {
+                font-size: 45px;
+                color: hsl(var(--white));
+                margin-top: 2px;
+                text-align: center;
+                border-radius: 50%;
+                transition: transform 0.5s ease;
+                font-weight: 700;
+                margin: auto;
+                @include msm-screen {
+                    font-size: 35px;
+                }
+            }
+            span.letter {
+                position: absolute;
+                font-size: 65px;
+                top: -11px;
+                margin-left: 15px;
+                color: hsl(var(--white));
+                margin-top: 5px;
+                @include msm-screen {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    &__content  {
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: hsl(var(--white)/.6);
+            @include msm-screen {
+                font-size: 25px;
+            }
+        }
+    }
+}
