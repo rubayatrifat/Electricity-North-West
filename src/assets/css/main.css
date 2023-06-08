@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Teko:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Lexend+Deca:wght@500;600;700&display=swap");
 /*================ Css Variables Start ===============*/
 :root {
   /* === Font Family === */
-    --heading-font: "Teko", sans-serif;
-    --body-font: "Rubik", sans-serif;
+    --heading-font: "Lexend Deca", sans-serif;
+    --body-font: "DM Sans", sans-serif;
   /* === TypoGraphy ===*/
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem);
     --heading-two: clamp(1.375rem, 1.7vw + 1rem, 2.5rem);
@@ -20,9 +20,9 @@
     --light-l: 78%;
     --light: var(--light-h) var(--light-s) var(--light-l);
   /*== Black Color ==*/
-    --black-h: 0;
-    --black-s: 0%;
-    --black-l: 0%;
+    --black-h: 248;
+    --black-s: 100%;
+    --black-l: 9%;
     --black: var(--black-h) var(--black-s) var(--black-l);
     --heading-color: var(--black);
     --body-color: 0 0% 27%;
@@ -43,9 +43,9 @@
     --base-light-l: 50%;
     --base-light: var(--base-light-h) var(--base-light-s) var(--base-light-l);
   /*========================= Base Color =============================*/
-    --base-h: 16;
+    --base-h: 25;
     --base-s: 100%;
-    --base-l: 58%;
+    --base-l: 55%;
     --base: var(--base-h) var(--base-s) var(--base-l);
   /*== Base Darken ==*/
     --base-d-100: var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.1);
@@ -3480,222 +3480,26 @@ select.form-control.form--control:has(option) ~ .form--label {
     font-size: 25px;
 }
 
-/*================ Top Header Start Here ================*/
-.header-main-area {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: 0.3s linear;
-    padding-top: 0;
-}
-
+/*================ Header Top Start Here ================*/
 .header-top {
-    border-bottom: 1px solid hsl(var(--base)/0.08);
-    padding: 10px 0px;
-    position: relative;
-    z-index: 2;
+    padding: 18px 0;
+    background-color: hsl(var(--black));
 }
 
-@media screen and (max-width: 991px) {
-    .header-top {
-        display: none;
-    }
-}
-
-.header-top .social-list.style-two .social-list__link {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-}
-
-.top-header-wrapper {
+.header-top ul {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
 }
 
-@media screen and (max-width: 991px) {
-    .top-header-wrapper {
-        justify-content: center;
-    }
+.header-top ul li {
+    margin: 0 23px;
 }
 
-@media screen and (max-width: 424px) {
-    .top-header-wrapper {
-        justify-content: center;
-    }
-}
-
-.contact-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 -20px;
-}
-
-@media screen and (max-width: 991px) {
-    .contact-list {
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .contact-list {
-        display: none;
-    }
-}
-
-.contact-list__item {
-    padding: 2px 20px 0px;
-    position: relative;
-    color: hsl(var(--black));
-}
-
-.contact-list__item:last-child::before {
-    display: none;
-}
-
-.contact-list__item::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 15px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: hsl(var(--white)/0.4);
-}
-
-.contact-list__item-icon {
-    font-size: 16px;
-    text-align: center;
+.header-top ul li a {
     color: hsl(var(--base));
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.contact-list__link {
-    color: hsl(var(--black));
-    font-weight: 400;
-    font-family: var(--body-font);
-}
-
-.contact-list__link:hover .contact-list__link-icon {
-    color: hsl(var(--base));
-}
-
-.top-button {
-    display: flex;
-    flex-wrap: wrap;
-    color: hsl(var(--dark));
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media screen and (max-width: 991px) {
-    .top-button {
-        justify-content: center;
-    }
-}
-
-.login-registration-list {
-    margin: 0 -10px;
-}
-
-@media screen and (max-width: 991px) {
-    .login-registration-list {
-        padding-right: 0;
-    }
-}
-
-.login-registration-list__item {
-    color: hsl(var(--white));
-    position: relative;
-}
-
-.login-registration-list__item:last-child::before {
-    display: none;
-}
-
-.login-registration-list__item::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 12px;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: hsl(var(--dark)/0.5);
-}
-
-.login-registration-list__icon {
-    color: hsl(var(--base));
-    margin-right: 10px;
-    font-size: 16px;
-}
-
-.login-registration-list__icon i {
-    color: hsl(var(--base));
-}
-
-.login-registration-list__link {
-    color: hsl(var(--white));
-    font-weight: 400;
-    font-family: var(--body-font);
-}
-
-@media screen and (max-width: 575px) {
-    .login-registration-list__link {
-        font-size: 15px;
-    }
-}
-
-.login-registration-list__link:hover {
-    color: hsl(var(--base));
-}
-
-.login-registration-list__link:hover .login-registration-list__icon {
-    color: hsl(var(--white));
-}
-
-@media screen and (max-width: 991px) {
-    .login-registration-list__link:hover {
-        color: hsl(var(--base));
-    }
-}
-
-.language-box {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.language-box .select {
-    color: hsl(var(--black));
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 3px 0px;
-    font-size: 15px;
-    font-weight: 400;
-    border-radius: 0px;
-}
-
-.language-box .select option {
-    background-color: hsl(var(--dark));
-}
-
-li.login-registration-list__item .social-list__item .social-list__link {
-    height: 30px;
-    width: 30px;
-    color: hsl(var(--black)) !important;
-}
-
-li.login-registration-list__item .social-list__item .social-list__link:hover {
-    color: hsl(var(--white)) !important;
+    font-size: 26px;
+    margin-top: 6px;
 }
 
 /*====================== Breadcumb Css Start ====================*/

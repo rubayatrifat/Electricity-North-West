@@ -1,13 +1,10 @@
-
-// @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Teko:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Lexend+Deca:wght@500;600;700&display=swap');
 
 /*================ Css Variables Start ===============*/
   :root {    
     /* === Font Family === */
-    --heading-font: 'Teko', sans-serif;
-    --body-font: 'Rubik', sans-serif;
+    --heading-font: 'Lexend Deca', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
     
     /* === TypoGraphy ===*/
     --heading-one: clamp(1.5rem, 2.8vw + 1rem, 3.75rem); //Min:24px - Max:60px
@@ -28,9 +25,9 @@
     --light: var(--light-h) var(--light-s) var(--light-l);
     
     /*== Black Color ==*/
-    --black-h: 0;
-    --black-s: 0%;
-    --black-l: 0%;
+    --black-h: 248;
+    --black-s: 100%;
+    --black-l: 9%;
     --black: var(--black-h) var(--black-s) var(--black-l);
     
     --heading-color: var(--black);
@@ -69,9 +66,9 @@
     // --base-s: 91%;
     // --base-l: 62%;
 
-    --base-h: 16;
+    --base-h: 25;
     --base-s: 100%;
-    --base-l: 58%;
+    --base-l: 55%;
     --base: var(--base-h) var(--base-s) var(--base-l);
     /*== Base Darken ==*/
     --base-d-100: var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.1);
