@@ -7,7 +7,7 @@
 }
 
 .servies-area {
-    padding: 90px 0;
+    padding: 175px 0 90px 0;
     .single-servies {
         margin-top: 50px;
         padding: 24px 23px;
@@ -58,12 +58,12 @@
 	height: 20px;
 	border-radius: 50%;
     outline: 1px solid hsl(var(--white));
-    border: 5px solid hsl(var(--white));
+    border: 7px solid hsl(var(--white));
 }
 
 .slick-dots li.slick-active button {
     outline: 1px solid hsl(var(--base));
-    border: 5px solid hsl(var(--white));
+    border: 7px solid hsl(var(--white));
 
 
 }

@@ -5,10 +5,11 @@
     .single-slider {
         background-image: url(../images/banner/banner.jpg);
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         padding: 220px 0;
         position: relative;
-        height: 800px;
+        height: 850px;
         .banner-content {
             z-index: 2;
             position: relative;
@@ -39,7 +40,7 @@
     }
     .img-2 {
         background-image: url(../images/banner/banner2.jpg);
-        height: 800px;
+        height: 850px;
         
     }
 }
@@ -90,9 +91,6 @@
     font-size: 16px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    &.middle {
-        justify-content: center;
-    }
     img {
         margin: 0 10px;
     }
@@ -100,6 +98,10 @@
 
 .center {
     margin: auto;
+}
+
+.middle {
+    justify-content: center;
 }
 
 /* Section Title End Here */
