@@ -8,6 +8,7 @@
         background-repeat: no-repeat;
         padding: 220px 0;
         position: relative;
+        height: 800px;
         .banner-content {
             z-index: 2;
             position: relative;
@@ -49,6 +50,7 @@
     }
     .img-2 {
         background-image: url(../images/banner/banner2.jpg);
+        height: 800px;
     
     }
 }
