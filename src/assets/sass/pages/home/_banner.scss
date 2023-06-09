@@ -36,22 +36,11 @@
             background: linear-gradient(90deg, #000000b0 10%, transparent);
             z-index: 1;
         }
-        .subtitle {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            color: hsl(var(--base));
-            font-size: 16px;
-            margin-bottom: 20px;
-            img {
-                margin: 0 10px;
-            }
-        }
     }
     .img-2 {
         background-image: url(../images/banner/banner2.jpg);
         height: 800px;
-    
+        
     }
 }
 
@@ -70,10 +59,47 @@
 
 .slick-prev {
 	left: 3%;
+    i {
+        transition: .3s;
+    }
+    &:hover i{
+        margin-right: 12px;
+    }
 }
 
+
 .slick-next {
-	right: 3%;
+    right: 3%;
+    i {
+        transition: .3s;
+    }
+    &:hover i{
+        margin-left: 12px;
+    }
 }
 
 /*============= Slider area end  =============*/
+
+/* Section Title Here */
+
+.subtitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: hsl(var(--base));
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    &.middle {
+        justify-content: center;
+    }
+    img {
+        margin: 0 10px;
+    }
+}
+
+.center {
+    margin: auto;
+}
+
+/* Section Title End Here */

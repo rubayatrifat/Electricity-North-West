@@ -168,6 +168,44 @@ $('.theme-btn').on('mouseenter', function (e) {
         ]
     });
 
+
+    // Servies area slider
+
+    $('.servies-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 3500,
+      dots: true,
+      pauseOnHover: false,
+      arrows: false,
+      responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+
   /* ========================= Latest Slider Js Start ===============*/
   $('.client-slider').slick({
   slidesToShow: 6,
