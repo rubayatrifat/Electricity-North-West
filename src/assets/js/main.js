@@ -127,6 +127,47 @@ $('.theme-btn').on('mouseenter', function (e) {
         ]
     });
 
+// Banner Area Slider
+
+    $('.sliders').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 7000,
+      speed: 500,
+      dots: false,
+      pauseOnHover: false,
+      arrows: true,
+      fade: true,
+      cssEase: 'linear',
+      prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-angle-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-angle-right"></i></button>',
+      responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+
   /* ========================= Latest Slider Js Start ===============*/
   $('.client-slider').slick({
   slidesToShow: 6,
