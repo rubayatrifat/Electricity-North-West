@@ -1,11 +1,11 @@
 /*============= Slider area start  =============*/
 
 .slider-area {
-    overflow: hidden;
+    position: relative;
     .full-request{
         position: absolute;
-        width: 77%;
-        top: 117%;
+        width: 76%;
+        bottom: -9%;
         .tag {
             background-color: hsl(var(--base));
             display: table;
@@ -45,7 +45,8 @@
         background-repeat: no-repeat;
         padding: 220px 0;
         position: relative;
-        height: 850px;
+        min-height: 850px;
+        overflow: hidden;
         .banner-content {
             z-index: 2;
             position: relative;
@@ -76,7 +77,7 @@
     }
     .img-2 {
         background-image: url(../images/banner/banner2.jpg);
-        height: 850px;
+        min-height: 850px;
         
     }
 }

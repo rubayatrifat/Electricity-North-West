@@ -1496,6 +1496,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 p {
@@ -5966,13 +5967,13 @@ html {
 
 /*============= Slider area start  =============*/
 .slider-area {
-    overflow: hidden;
+    position: relative;
 }
 
 .slider-area .full-request {
     position: absolute;
-    width: 77%;
-    top: 117%;
+    width: 76%;
+    bottom: -9%;
 }
 
 .slider-area .full-request .tag {
@@ -6018,7 +6019,8 @@ html {
     background-repeat: no-repeat;
     padding: 220px 0;
     position: relative;
-    height: 850px;
+    min-height: 850px;
+    overflow: hidden;
 }
 
 .slider-area .single-slider .banner-content {
@@ -6054,7 +6056,7 @@ html {
 
 .slider-area .img-2 {
     background-image: url(../images/banner/banner2.jpg);
-    height: 850px;
+    min-height: 850px;
 }
 
 .slick-slide img {
