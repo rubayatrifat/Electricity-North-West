@@ -168,7 +168,6 @@ $('.theme-btn').on('mouseenter', function (e) {
         ]
     });
 
-
     // Servies area slider
 
     $('.servies-slider').slick({
@@ -201,6 +200,45 @@ $('.theme-btn').on('mouseenter', function (e) {
             settings: {
               arrows: false,
               slidesToShow: 1
+            }
+          }
+        ]
+    });
+
+
+
+    $('.brand-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 3500,
+      dots: false,
+      pauseOnHover: false,
+      prevArrow: '<button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>',
+      nextArrow: '<button type="button" class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>',
+      arrows: true,
+      responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows: false,
+              slidesToShow: 5,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 5
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: false,
+              slidesToShow: 5
             }
           }
         ]

@@ -6303,6 +6303,35 @@ html {
 }
 
 /*============= Project area End  =============*/
+/* ================= Counter Area Start ================= */
+/* ================= Counter Area End ================= */
+.brand-area {
+    padding: 90px 0;
+}
+
+.brand-area .slick-prev {
+    left: -9%;
+    top: 17px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+}
+
+.brand-area .slick-next {
+    opacity: 0;
+    right: -6%;
+    transition: all ease-in-out 0.3s;
+}
+
+.brand-area:hover .slick-prev {
+    opacity: 1;
+    left: -5%;
+}
+
+.brand-area:hover .slick-next {
+    opacity: 1;
+    right: -2%;
+}
+
 /*=================== Blog Details =========*/
 .blog-details {
     overflow: hidden;

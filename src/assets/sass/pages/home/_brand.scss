@@ -1,0 +1,24 @@
+.brand-area {
+	padding: 90px 0;
+    .slick-prev {
+        left: -9%;
+        top: 17px;
+        opacity: 0;
+        transition: all ease-in-out .3s;
+    }
+    .slick-next {
+        opacity: 0;
+        right: -6%;
+        transition: all ease-in-out .3s;
+    }
+    &:hover {
+        .slick-prev {
+            opacity: 1;
+            left: -5%;
+        }
+        .slick-next {
+            opacity: 1;
+            right: -2%;
+        }
+    }
+}
