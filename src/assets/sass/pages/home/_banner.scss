@@ -22,8 +22,8 @@
             padding: 50px 0;
             i {
                 position: absolute;
-                top: 18px;
-                right: 17px;
+                top: 36%;
+                right: 1%;
                 color: hsl(var(--black)/0.4);
             }
             input {
@@ -31,6 +31,7 @@
                 height: 54px;
                 padding: 5px 18px;
                 border-radius: 5px;
+                border: none;
                 &::placeholder {
                     color: hsl(var(--black)/.7);
                 }
