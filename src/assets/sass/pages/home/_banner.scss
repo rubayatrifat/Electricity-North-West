@@ -2,6 +2,42 @@
 
 .slider-area {
     overflow: hidden;
+    .full-request{
+        position: absolute;
+        width: 77%;
+        top: 117%;
+        .tag {
+            background-color: hsl(var(--base));
+            display: table;
+            padding: 17px 39px 9px 39px;
+            margin-left: -12px;
+            border-radius: 5px 5px 0 0;
+            h4 {
+                color: hsl(var(--white));
+                font-size: 22px;
+            }
+        }
+        .request-input {
+            background-color: hsl(var(--black));
+            padding: 50px 0;
+            i {
+                position: absolute;
+                top: 18px;
+                right: 17px;
+                color: hsl(var(--black)/0.4);
+            }
+            input {
+                width: 204px;
+                height: 54px;
+                padding: 5px 18px;
+                border-radius: 5px;
+                &::placeholder {
+                    color: hsl(var(--black)/.7);
+                }
+            }
+        }
+    }
+    
     .single-slider {
         background-image: url(../images/banner/banner.jpg);
         background-size: cover;

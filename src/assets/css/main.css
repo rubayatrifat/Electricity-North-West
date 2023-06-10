@@ -43,7 +43,7 @@
     --base-light-l: 50%;
     --base-light: var(--base-light-h) var(--base-light-s) var(--base-light-l);
   /*========================= Base Color =============================*/
-    --base-h: 70;
+    --base-h: 25;
     --base-s: 100%;
     --base-l: 55%;
     --base: var(--base-h) var(--base-s) var(--base-l);
@@ -5969,6 +5969,48 @@ html {
     overflow: hidden;
 }
 
+.slider-area .full-request {
+    position: absolute;
+    width: 77%;
+    top: 117%;
+}
+
+.slider-area .full-request .tag {
+    background-color: hsl(var(--base));
+    display: table;
+    padding: 17px 39px 9px 39px;
+    margin-left: -12px;
+    border-radius: 5px 5px 0 0;
+}
+
+.slider-area .full-request .tag h4 {
+    color: hsl(var(--white));
+    font-size: 22px;
+}
+
+.slider-area .full-request .request-input {
+    background-color: hsl(var(--black));
+    padding: 50px 0;
+}
+
+.slider-area .full-request .request-input i {
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    color: hsl(var(--black)/0.4);
+}
+
+.slider-area .full-request .request-input input {
+    width: 204px;
+    height: 54px;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+.slider-area .full-request .request-input input::placeholder {
+    color: hsl(var(--black)/0.7);
+}
+
 .slider-area .single-slider {
     background-image: url(../images/banner/banner.jpg);
     background-size: cover;
@@ -6076,48 +6118,6 @@ html {
 }
 
 /* Section Title End Here */
-.full-request {
-    position: absolute;
-    width: 77%;
-    top: 117%;
-}
-
-.full-request .tag {
-    background-color: hsl(var(--base));
-    display: table;
-    padding: 17px 39px 9px 39px;
-    margin-left: -12px;
-    border-radius: 5px 5px 0 0;
-}
-
-.full-request .tag h4 {
-    color: hsl(var(--white));
-    font-size: 22px;
-}
-
-.full-request .request-input {
-    background-color: hsl(var(--black));
-    padding: 50px 0;
-}
-
-.full-request .request-input i {
-    position: absolute;
-    top: 18px;
-    right: 17px;
-    color: hsl(var(--black)/0.4);
-}
-
-.full-request .request-input input {
-    width: 204px;
-    height: 54px;
-    padding: 5px 18px;
-    border-radius: 5px;
-}
-
-.full-request .request-input input::placeholder {
-    color: hsl(var(--black)/0.7);
-}
-
 /*====================== Servies Start Here ====================*/
 .section-title h2 {
     font-size: 54px;
