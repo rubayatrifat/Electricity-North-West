@@ -16,12 +16,11 @@
     .request-input {
         background-color: hsl(var(--black));
         padding: 50px 0;
-        position: relative;
         i {
             position: absolute;
-            top: 69px;
-            right: 26.5%;
-            color: hsl(var(--black)/.4);
+            top: 18px;
+            right: 17px;
+            color: hsl(var(--black)/0.4);
         }
         input {
             width: 204px;
