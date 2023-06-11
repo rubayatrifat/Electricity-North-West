@@ -1,0 +1,28 @@
+/* ================= Counter Area Start ================= */
+
+.counter-area {
+    background-color: #15141C;
+    padding: 90px 0;
+    .light-shape {
+        position: absolute;
+        top: -29px;
+        left: 48px;
+    }
+    .counters {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        h4 {
+            color: #fff;
+            font-size: 54px;
+            font-weight: 600px;
+        }
+        span {
+            color: #f5f5f5;
+        }
+    }
+}
+
+/* ================= Counter Area End ================= */
