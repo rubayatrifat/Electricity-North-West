@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Lexend+Deca:wght@500;600;700&display=swap");
 /*================ Css Variables Start ===============*/
 :root {
@@ -6304,9 +6306,147 @@ html {
 
 /*============= Project area End  =============*/
 /* ================= Counter Area Start ================= */
-/* ================= Counter Area End ================= */
-.brand-area {
+.counter-area {
+    background-color: #15141C;
     padding: 90px 0;
+}
+
+.counter-area .light-shape {
+    position: absolute;
+    top: -29px;
+    left: 48px;
+}
+
+.counter-area .counters {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.counter-area .counters h4 {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 600px;
+}
+
+.counter-area .counters span {
+    color: #f5f5f5;
+}
+
+/* ================= Counter Area End ================= */
+/*====================== Pricing Plan Start ====================*/
+.pricing-area {
+    padding: 95px 0;
+}
+
+.pricing-area .pricing-item {
+    background-color: #f7f7f7;
+    position: relative;
+    padding: 52px 47px;
+    border-radius: 10px;
+    position: relative;
+    transition: all ease-in-out 0.4s;
+}
+
+.pricing-area .pricing-item img {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all ease-in-out 0.4s;
+    top: 0;
+}
+
+.pricing-area .pricing-item .pricing-top {
+    margin-bottom: 21px;
+    border-bottom: 3px dotted hsl(var(--white));
+    padding-bottom: 14px;
+    z-index: 2;
+    position: relative;
+}
+
+.pricing-area .pricing-item .pricing-top h4 {
+    font-size: 24px;
+    color: hsl(var(--black));
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.pricing-area .pricing-item .pricing-top span {
+    font-size: 24px;
+    color: hsl(var(--base));
+    transition: 0.4s;
+}
+
+.pricing-area .pricing-item .pricing-top span span {
+    font-size: 16px;
+}
+
+.pricing-area .pricing-item .pricing-bottom {
+    z-index: 2;
+    position: relative;
+}
+
+.pricing-area .pricing-item .pricing-bottom ul {
+    margin-bottom: 20px;
+}
+
+.pricing-area .pricing-item .pricing-bottom ul li {
+    color: #616161;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.pricing-area .pricing-item .pricing-bottom ul li::before {
+    content: "•";
+    color: hsl(var(--base));
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.pricing-area .pricing-item:hover {
+    background-color: hsl(var(--base));
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.22);
+}
+
+.pricing-area .pricing-item:hover img {
+    opacity: 1;
+    top: 135px;
+}
+
+.pricing-area .pricing-item:hover h4 {
+    color: hsl(var(--white));
+}
+
+.pricing-area .pricing-item:hover span {
+    color: hsl(var(--white));
+}
+
+.pricing-area .pricing-item:hover li {
+    color: hsl(var(--white)) !important;
+}
+
+.pricing-area .pricing-item:hover li::before {
+    color: hsl(var(--white)) !important;
+}
+
+.pricing-area .pricing-item:hover .btn {
+    background-color: hsl(var(--white));
+    color: hsl(var(--base));
+}
+
+/*====================== Pricing Plan End ====================*/
+.brand-area {
+    padding: 50px 0;
+}
+
+.brand-area img {
+    margin: auto;
+    display: flex;
 }
 
 .brand-area .slick-prev {
@@ -6318,7 +6458,8 @@ html {
 
 .brand-area .slick-next {
     opacity: 0;
-    right: -6%;
+    top: 17px;
+    right: -9%;
     transition: all ease-in-out 0.3s;
 }
 
@@ -6329,7 +6470,7 @@ html {
 
 .brand-area:hover .slick-next {
     opacity: 1;
-    right: -2%;
+    right: -5%;
 }
 
 /*=================== Blog Details =========*/
