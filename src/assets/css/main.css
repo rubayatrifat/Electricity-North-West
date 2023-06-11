@@ -6198,36 +6198,36 @@ html {
 }
 
 /*====================== Servies End Here ====================*/
-/* ================== Contract Area Start Here ================== */
-.contact-area {
-    background-image: url(../images/contract/contact.png);
+/* ================== Help Area Start Here ================== */
+.help-area {
+    background-image: url(../images/help/contact.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0;
 }
 
-.contact-area .contact-content {
+.help-area .help-content {
     background-color: hsl(var(--white));
     padding: 50px 40px;
 }
 
-.contact-area .contact-content h3 {
+.help-area .help-content h3 {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 25px;
 }
 
-.contact-area .contact-content p {
+.help-area .help-content p {
     margin-bottom: 30px;
 }
 
-.contact-area .contact-content .contact-btn {
+.help-area .help-content .help-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.contact-area .contact-content .contact-btn a {
+.help-area .help-content .help-btn a {
     width: 45%;
 }
 
@@ -6235,7 +6235,7 @@ html {
     justify-content: end;
 }
 
-/* ================== Contract Area End Here ================== */
+/* ================== Help Area End Here ================== */
 /*============= Project area start  =============*/
 .project-area {
     padding: 90px 0;
@@ -6484,6 +6484,55 @@ html {
     right: -5%;
 }
 
+/* ============== Contact Area Start Here ============== */
+.contact-area {
+    background-color: hsl(var(--base));
+    padding: 90px 0;
+}
+
+.contact-area .section-title h2 {
+    color: hsl(var(--white));
+}
+
+.contact-area p {
+    color: #f2f2f2;
+    width: 38pc;
+}
+
+.contact-area .contact-inputs {
+    margin-left: 100px;
+}
+
+.contact-area .contact-inputs input {
+    margin-bottom: 18px;
+    width: 100%;
+    padding: 17px 23px;
+    border: 1px solid #ececec;
+    background: transparent;
+    color: #efefef;
+    border-radius: 5px;
+}
+
+.contact-area .contact-inputs textarea {
+    width: 100%;
+    height: 130px;
+    background: transparent;
+    border: 1px solid #ececec;
+    color: #efefef;
+    padding: 13px 25px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+.contact-area .contact-inputs .btn {
+    color: hsl(var(--base));
+    background-color: hsl(var(--white));
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ============== Contact Area End Here ============== */
 /*=================== Blog Details =========*/
 .blog-details {
     overflow: hidden;
