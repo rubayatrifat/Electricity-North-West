@@ -92,13 +92,13 @@ $('.theme-btn').on('mouseenter', function (e) {
     
 
     /*========================= Slick Slider Js Start ==============*/
-    $('.testimonial-slider').slick({
+    $('.tetimonial-slider').slick({
       slidesToShow: 1,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 5000,
       speed: 3500,
-      dots: false,
+      dots: true,
       pauseOnHover: false,
       arrows: false,
       responsive: [

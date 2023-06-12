@@ -6335,6 +6335,28 @@ html {
 }
 
 /* ================= Counter Area End ================= */
+/*=================== Testimonials area Start here =========*/
+.testimonial-area {
+    padding: 95px 0;
+}
+
+.testimonial-area .seciton-title h2 {
+    line-height: 55px;
+}
+
+.testimonial-area .testimonial-item .bg {
+    width: 300px;
+    height: 575px;
+    background-color: hsl(var(--base));
+    position: absolute;
+}
+
+.testimonial-area .testimonial-item .testimonial-img img {
+    width: 460px;
+    height: 435px;
+}
+
+/*=================== Testimonials area end here =========*/
 /*====================== Pricing Plan Start ====================*/
 .pricing-area {
     padding: 95px 0;
