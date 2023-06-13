@@ -6338,6 +6338,7 @@ html {
 /*=================== Testimonials area Start here =========*/
 .testimonial-area {
     padding: 95px 0;
+    position: relative;
 }
 
 .testimonial-area .seciton-title h2 {
@@ -6349,11 +6350,41 @@ html {
     height: 575px;
     background-color: hsl(var(--base));
     position: absolute;
+    z-index: -1;
+}
+
+.testimonial-area .testimonial-item .testimonial-img {
+    height: 450px;
 }
 
 .testimonial-area .testimonial-item .testimonial-img img {
     width: 460px;
     height: 435px;
+    border-radius: 0 20px 20px 0;
+}
+
+.testimonial-area .testimonial-item .testimonial-content i {
+    color: hsl(var(--base));
+    font-size: 75px;
+    margin-bottom: 30px;
+}
+
+.testimonial-area .testimonial-item .testimonial-content p {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    width: 577px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.testimonial-area .slick-dots {
+    position: absolute;
+    text-align: inherit;
+    padding: 0;
+    bottom: 64px;
+    right: 30%;
+    z-index: -1;
 }
 
 /*=================== Testimonials area end here =========*/

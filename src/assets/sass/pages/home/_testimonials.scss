@@ -2,6 +2,7 @@
 
 .testimonial-area {
 	padding: 95px 0;
+    position: relative;
     .seciton-title {
         h2 {
             line-height: 55px;
@@ -13,13 +14,39 @@
             height: 575px;
             background-color: hsl(var(--base));
             position: absolute;
+            z-index: -1;
         }
         .testimonial-img {
+            height: 450px;
             img {
                 width: 460px;
                 height: 435px;
+                border-radius:  0 20px 20px 0;
             }
         }
+        .testimonial-content {
+            i {
+                color: hsl(var(--base));
+                font-size: 75px;
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 20px;
+                font-weight: 500;
+                font-style: italic;
+                width: 577px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        text-align: inherit;
+        padding: 0;
+        bottom: 64px;
+        right: 30%;
+        z-index: -1;
     }
 }
 
