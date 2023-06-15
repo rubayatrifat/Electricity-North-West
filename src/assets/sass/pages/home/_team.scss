@@ -1,5 +1,17 @@
 /*============= Team Area Started =============*/
 
-
+.team-area {
+	padding: 30px 0;
+    .team-slider {
+        .single-slider {
+            img {
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
 
 /*============= Team Area End =============*/

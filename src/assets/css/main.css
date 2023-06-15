@@ -5991,7 +5991,7 @@ html {
 
 .slider-area .full-request .request-input {
     background-color: hsl(var(--black));
-    padding: 85px 0;
+    padding: 50px 0;
 }
 
 .slider-area .full-request .request-input i {
@@ -6505,9 +6505,20 @@ html {
 
 /*====================== Pricing Plan End ====================*/
 /*============= Team Area Started =============*/
+.team-area {
+    padding: 30px 0;
+}
+
+.team-area .team-slider .single-slider img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
 /*============= Team Area End =============*/
 .brand-area {
-    padding: 50px 0;
+    padding: 85px 0;
 }
 
 .brand-area img {
