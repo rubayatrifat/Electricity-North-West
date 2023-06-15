@@ -206,6 +206,44 @@ $('.theme-btn').on('mouseenter', function (e) {
     });
 
 
+    // Team area slider
+
+    $('.team-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      speed: 3500,
+      dots: true,
+      pauseOnHover: false,
+      arrows: false,
+      responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+              dots: false,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: false,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+
+
 
     $('.brand-slider').slick({
       slidesToShow: 5,
