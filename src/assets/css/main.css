@@ -6509,11 +6509,72 @@ html {
     padding: 30px 0;
 }
 
-.team-area .team-slider .single-slider .member-img img {
+.team-slider .single-slider {
+    position: relative;
+}
+
+.team-slider .single-slider .bg-member {
+    position: absolute;
+    z-index: 2;
+    max-width: 63%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.team-slider .single-slider .member-img {
+    position: relative;
+}
+
+.team-slider .single-slider .member-img img {
     width: 250px;
     height: 250px;
     object-fit: cover;
     margin-bottom: 20px;
+}
+
+.team-slider .single-slider .member-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(var(--base));
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.team-slider .single-slider .social-icons {
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.team-slider .single-slider .social-icons span {
+    color: #fff;
+    font-size: 31px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.team-slider .single-slider:hover .social-icons {
+    top: 50%;
+    opacity: 1;
+}
+
+.team-slider .single-slider:hover .bg-member {
+    top: 42%;
+    opacity: 1;
+}
+
+.team-slider .single-slider:hover .member-img::before {
+    opacity: 1;
 }
 
 /*============= Team Area End =============*/
