@@ -6158,11 +6158,21 @@ html {
     color: #fff;
 }
 
-.servies-area .single-servies img {
+.servies-area .single-servies:hover .img-wraper img {
+    transform: scale(1.1);
+}
+
+.servies-area .single-servies .img-wraper {
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.servies-area .single-servies .img-wraper img {
     width: 386px;
     height: 261px;
-    border-radius: 15px;
     object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s;
 }
 
 .servies-area .single-servies h3 {
@@ -6557,7 +6567,7 @@ html {
 }
 
 .team-slider .single-slider .social-icons span {
-    color: #fff;
+    color: hsl(var(--white));
     font-size: 31px;
     margin: 0px 10px;
     cursor: pointer;
