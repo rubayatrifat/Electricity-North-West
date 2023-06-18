@@ -56,7 +56,14 @@
 	z-index: 999;
 	top: 0;
 	right: 0;
-	width: 300px;
+	width: 320px;
+	background: hsl(var(--base));
+	height: 100vh;
+	padding: 11px 24px;
+    img {
+        margin-left: 40px;
+        margin-bottom: 35px;
+    }
 }
 
 /* Sidebar Menu */
