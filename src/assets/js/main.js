@@ -1,7 +1,7 @@
   /*============== Main Js Start ========*/
-
-(function ($) {
-  "use strict";
+  
+  (function ($) {
+    "use strict";
 
   /*============== Header Hide Click On Body Js ========*/
   $('.navbar-toggler.header-button').on('click', function() {
