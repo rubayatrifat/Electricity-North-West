@@ -64,6 +64,40 @@
         margin-left: 40px;
         margin-bottom: 35px;
     }
+    .menu-txt {
+        font-size: 20px;
+        margin-bottom: 10px; 
+        color: #fff;
+        display: inline-block;
+    }
+    .side-bar-menu {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        li {
+            margin: 4px 11px;
+            a {
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .policy {
+        span {
+            margin-bottom: 10px;
+            display: inline-block;
+            font-size: 20px;
+            color: #fff;
+        }
+        p {
+            color: #dfdfdf;
+            font-size: 11px;
+            line-height: 17px;
+            margin-bottom: 31px;
+        }
+    }
 }
 
 /* Sidebar Menu */

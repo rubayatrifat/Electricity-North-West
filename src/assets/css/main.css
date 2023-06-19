@@ -3188,6 +3188,42 @@ select.form-control.form--control:has(option) ~ .form--label {
     margin-bottom: 35px;
 }
 
+.side-bar .menu-txt {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: inline-block;
+}
+
+.side-bar .side-bar-menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.side-bar .side-bar-menu li {
+    margin: 4px 11px;
+}
+
+.side-bar .side-bar-menu li a:hover {
+    color: #fff;
+}
+
+.side-bar .policy span {
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+}
+
+.side-bar .policy p {
+    color: #dfdfdf;
+    font-size: 11px;
+    line-height: 17px;
+    margin-bottom: 31px;
+}
+
 /* Sidebar Menu */
 /*============ Main Header End Here =======================*/
 /*================ Header Top Start Here ================*/
