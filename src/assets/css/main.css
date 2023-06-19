@@ -3183,9 +3183,17 @@ select.form-control.form--control:has(option) ~ .form--label {
     padding: 11px 24px;
 }
 
+.side-bar i {
+    position: absolute;
+    font-size: 25px;
+    top: 14px;
+    left: 30px;
+}
+
 .side-bar img {
     margin-left: 40px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+    margin-top: 55px;
 }
 
 .side-bar .menu-txt {
@@ -3222,6 +3230,29 @@ select.form-control.form--control:has(option) ~ .form--label {
     font-size: 11px;
     line-height: 17px;
     margin-bottom: 31px;
+}
+
+.side-bar .side-contract {
+    margin-top: 25px;
+}
+
+.side-bar .side-contract .hot-line {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.side-bar .side-contract .number-email {
+    display: flex;
+    margin-left: 12px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.side-bar .side-contract .number-email p {
+    margin-left: 5px;
+    color: #dfdfdf;
 }
 
 /* Sidebar Menu */

@@ -60,9 +60,16 @@
 	background: hsl(var(--base));
 	height: 100vh;
 	padding: 11px 24px;
+    i {
+        position: absolute;
+        font-size: 25px;
+        top: 14px;
+        left: 30px;
+    }
     img {
         margin-left: 40px;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
+        margin-top: 55px;
     }
     .menu-txt {
         font-size: 20px;
@@ -96,6 +103,25 @@
             font-size: 11px;
             line-height: 17px;
             margin-bottom: 31px;
+        }
+    }
+    .side-contract {
+        margin-top: 25px;
+        .hot-line {
+            display: inline-block;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .number-email {
+            display: flex;
+            margin-left: 12px;
+            color: #fff;
+            margin-bottom: 0px;
+            p {
+                margin-left: 5px;
+                color: #dfdfdf;
+            }
         }
     }
 }
