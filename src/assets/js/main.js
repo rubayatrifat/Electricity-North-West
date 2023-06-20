@@ -322,6 +322,18 @@ $('.theme-btn').on('mouseenter', function (e) {
     ]
 });
 
+// Sidebar Menu
+
+$('.more').on('click', function() {
+  $('.side-bar').addClass('show')
+  $('.body-overlay').addClass('show-overlay')
+})
+
+$('.close-btn').on('click', function() {
+  $('.side-bar').removeClass('show')
+  $('.body-overlay').removeClass('show-overlay')
+})
+
   /*======================= Mouse hover Js Start ============*/
     $('.mousehover-item').on('mouseover', function() {
       $('.mousehover-item').removeClass('active')

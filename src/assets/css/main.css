@@ -3176,12 +3176,17 @@ select.form-control.form--control:has(option) ~ .form--label {
     position: fixed;
     z-index: 999;
     top: 0;
-    right: 0;
+    right: -320px;
     width: 320px;
     background: hsl(var(--base));
     height: 100vh;
     padding: 11px 24px;
     overflow: auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.side-bar.show {
+    right: 0;
 }
 
 .side-bar i {
@@ -3189,6 +3194,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     font-size: 25px;
     top: 14px;
     left: 30px;
+    cursor: pointer;
 }
 
 .side-bar img {
@@ -4473,7 +4479,7 @@ html {
 
 .body-overlay.show-overlay {
     visibility: visible;
-    opacity: 0;
+    opacity: 1;
 }
 
 .sidebar-overlay {
