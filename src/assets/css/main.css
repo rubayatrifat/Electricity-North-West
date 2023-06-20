@@ -3181,6 +3181,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     background: hsl(var(--base));
     height: 100vh;
     padding: 11px 24px;
+    overflow: auto;
 }
 
 .side-bar i {
