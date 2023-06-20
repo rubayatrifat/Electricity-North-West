@@ -334,6 +334,11 @@ $('.close-btn').on('click', function() {
   $('.body-overlay').removeClass('show-overlay')
 })
 
+$('.body-overlay').on('click', function() {
+  $('.side-bar').removeClass('show')
+  $('.body-overlay').removeClass('show-overlay')
+})
+
   /*======================= Mouse hover Js Start ============*/
     $('.mousehover-item').on('mouseover', function() {
       $('.mousehover-item').removeClass('active')
@@ -467,10 +472,10 @@ $('.close-btn').on('click', function() {
     /*========================= Header Sticky Js Start ==============*/
     $(window).on('scroll', function() {
       if ($(window).scrollTop() >= 300) {
-        $('.header').addClass('fixed-header');
+        $('.header-area').addClass('fixed-header');
       }
       else {
-          $('.header').removeClass('fixed-header');
+          $('.header-area').removeClass('fixed-header');
       }
     }); 
     

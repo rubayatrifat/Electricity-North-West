@@ -2,6 +2,36 @@
 
 .header-area {
 	padding: 20px 0;
+    transition: .5s;
+    &.fixed-header {
+        position: sticky;
+        top: 0;
+        background-color: hsl(var(--base));
+        z-index: 999;
+        .main-menu {
+            a{
+                color: hsl(var(--white));
+            }
+        }
+        .card-more {
+            i {
+                color: #fff;
+            }
+            .more {
+                background-color: #fff;
+                i {
+                    color: hsl(var(--base));
+                }
+            }
+        }
+        .card-more .servies-card::before {
+            background: hsl(var(--black));
+            color: hsl(var(--white));
+        }
+    }
+
+}
+
     .main-menu {
         display: flex;
         justify-content: start;
@@ -32,7 +62,7 @@
                 height: 17px;
                 background-color: hsl(var(--base));
                 font-size: 13px;
-                color: wheat;
+                color: hsl(var(--white));
                 right: -7px;
                 top: -6px;
                 border-radius: 50%;
@@ -47,7 +77,7 @@
             cursor: pointer;
         }
     }
-}
+
 
 /* Sidebar Menu */
 
@@ -62,6 +92,7 @@
 	padding: 11px 24px;
     overflow: auto;
     transition: all ease-in-out .5s;
+    z-index: 99999;
     &.show {
         right: 0;
     }

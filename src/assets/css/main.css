@@ -3117,52 +3117,81 @@ select.form-control.form--control:has(option) ~ .form--label {
 /*============ Main Header Start Here =======================*/
 .header-area {
     padding: 20px 0;
+    transition: 0.5s;
 }
 
-.header-area .main-menu {
+.header-area.fixed-header {
+    position: sticky;
+    top: 0;
+    background-color: hsl(var(--base));
+    z-index: 999;
+}
+
+.header-area.fixed-header .main-menu a {
+    color: hsl(var(--white));
+}
+
+.header-area.fixed-header .card-more i {
+    color: #fff;
+}
+
+.header-area.fixed-header .card-more .more {
+    background-color: #fff;
+}
+
+.header-area.fixed-header .card-more .more i {
+    color: hsl(var(--base));
+}
+
+.header-area.fixed-header .card-more .servies-card::before {
+    background: hsl(var(--black));
+    color: hsl(var(--white));
+}
+
+.main-menu {
     display: flex;
     justify-content: start;
     align-items: center;
     margin-top: 13px;
 }
 
-.header-area .main-menu li {
+.main-menu li {
     margin-left: 35px;
 }
 
-.header-area .main-menu li a {
+.main-menu li a {
     font-family: var(--body-font);
     font-size: 16px;
     font-weight: 500;
 }
 
-.header-area .card-more {
+.card-more {
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.header-area .card-more .servies-card {
+.card-more .servies-card {
     margin-right: 30px;
     font-size: 18px;
     cursor: pointer;
     position: relative;
 }
 
-.header-area .card-more .servies-card::before {
+.card-more .servies-card::before {
     content: "2";
     position: absolute;
     padding: 0px 5px;
     height: 17px;
     background-color: hsl(var(--base));
     font-size: 13px;
-    color: wheat;
+    color: hsl(var(--white));
     right: -7px;
     top: -6px;
     border-radius: 50%;
 }
 
-.header-area .card-more .more {
+.card-more .more {
     font-size: 22px;
     color: #fff;
     background-color: hsl(var(--base));
@@ -3183,6 +3212,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     padding: 11px 24px;
     overflow: auto;
     transition: all ease-in-out 0.5s;
+    z-index: 99999;
 }
 
 .side-bar.show {
@@ -4480,6 +4510,7 @@ html {
 .body-overlay.show-overlay {
     visibility: visible;
     opacity: 1;
+    z-index: 9999;
 }
 
 .sidebar-overlay {
