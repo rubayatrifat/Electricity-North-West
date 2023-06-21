@@ -6,6 +6,11 @@
         position: absolute;
         width: 76%;
         bottom: -9%;
+        @include xl-screen {
+            width: 91%;
+            bottom: -9%;
+            left: 65px;
+        }
         .tag {
             background-color: hsl(var(--base));
             display: table;
@@ -57,12 +62,18 @@
                 font-weight: 600;
                 text-transform: capitalize;
                 margin-bottom: 30px;
+                @include xl-screen {
+                    font-size: 57px;
+                }
             }
             p {
                 color: #f2f2f2;
                 padding: 0 98px 0 0;
                 font-family: var(--body-font);
                 margin-bottom: 30px;
+                @include xl-screen {
+                    font-size: 15px;
+                }
             }
         }
         &::before {
@@ -129,6 +140,9 @@
     font-size: 16px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    @include xl-screen {
+        font-size: 13px;
+    }
     img {
         margin: 0 10px;
     }
