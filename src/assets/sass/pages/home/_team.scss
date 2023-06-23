@@ -48,12 +48,18 @@
                 font-size: 31px;
                 margin: 0px 10px;
                 cursor: pointer;
+                @include xl-screen {
+                    font-size: 23px;
+                }
             }
         }
         &:hover {
             .social-icons {
                 top: 50%;
                 opacity: 1;
+                @include xl-screen {
+                    top: 40%;
+                }
             }
             .bg-member {
                 top: 42%;

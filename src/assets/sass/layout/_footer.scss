@@ -17,13 +17,17 @@
         .number {
             margin-bottom: 15px;
             margin-top: 20px;
-            font-size: 20px;
+            font-size: 17px;
         }
         .email {
-            font-size: 20px;
+            font-size: 17px;
         }
         p {
             color: #f2f2f2;
+            @include xl-screen {
+                font-size: 15px;
+                line-height: 27px;
+            }
         }
     }
 }

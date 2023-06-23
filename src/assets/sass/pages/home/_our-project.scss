@@ -19,7 +19,9 @@
         }      
         .project-content {
             position: absolute;
-            top: -253px;
+            top: -50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
             z-index: -2;
             opacity: 0;
@@ -51,7 +53,7 @@
                 opacity: 1;
             }               
             .project-content {
-                top: 115px;
+                top: 50%;
                 z-index: 2;
                 opacity: 1;
             }

@@ -4,6 +4,9 @@
     font-size: 54px;
     margin-bottom: 30px;
     font-weight: 500;
+    @include xl-screen {
+        font-size: 45px;
+    }
 }
 
 .servies-area {
@@ -45,11 +48,18 @@
         h3 {
             font-size: 24px;
             transition: .4s ;
+            @include xl-screen {
+                font-size: 20px;
+            }
         }
         p {
             margin-bottom: 12px;
             color: #616161;
             transition: .4s;
+            @include xl-screen {
+                font-size: 15px;
+                line-height: 25px;
+            }
         }
         a{
             margin-bottom: 38px;

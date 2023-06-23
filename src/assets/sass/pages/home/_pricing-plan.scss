@@ -15,6 +15,8 @@
             opacity: 0;
             transition: all ease-in-out .4s;
             top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         .pricing-top {
             margin-bottom: 27px;
@@ -47,6 +49,9 @@
                     color: #616161;
                     margin-bottom: 15px;
                     transition: .4s;
+                    @include xl-screen {
+                        font-size: 15px;
+                    }
                     &::before {
                         content: "";
                         background-color: hsl(var(--base));
@@ -73,7 +78,7 @@
             }
             img {
                 opacity: 1;
-                top: 135px;
+                top: 50%;
             }
             h4 {
                 color: hsl(var(--white));

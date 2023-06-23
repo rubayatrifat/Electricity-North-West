@@ -3411,17 +3411,23 @@ select.form-control.form--control:has(option) ~ .form--label {
 .footer-area .footer-item .number {
     margin-bottom: 15px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .footer-area .footer-item .email {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .footer-area .footer-item p {
     color: #f2f2f2;
 }
 
+@media screen and (max-width: 1399px) {
+    .footer-area .footer-item p {
+        font-size: 15px;
+        line-height: 27px;
+    }
+}
 /*====================== Preloader Style ====================*/
 #loading {
     background-color: hsl(var(--base));
@@ -5985,6 +5991,12 @@ html {
     font-weight: 500;
 }
 
+@media screen and (max-width: 1399px) {
+    .section-title h2 {
+        font-size: 45px;
+    }
+}
+
 .servies-area {
     padding: 175px 0 90px 0;
 }
@@ -6037,10 +6049,23 @@ html {
     transition: 0.4s;
 }
 
+@media screen and (max-width: 1399px) {
+    .servies-area .single-servies h3 {
+        font-size: 20px;
+    }
+}
+
 .servies-area .single-servies p {
     margin-bottom: 12px;
     color: #616161;
     transition: 0.4s;
+}
+
+@media screen and (max-width: 1399px) {
+    .servies-area .single-servies p {
+        font-size: 15px;
+        line-height: 25px;
+    }
 }
 
 .servies-area .single-servies a {
@@ -6084,8 +6109,20 @@ html {
     margin-bottom: 25px;
 }
 
+@media screen and (max-width: 1399px) {
+    .help-area .help-content h3 {
+        font-size: 25px;
+    }
+}
+
 .help-area .help-content p {
     margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1399px) {
+    .help-area .help-content p {
+        font-size: 15px;
+    }
 }
 
 .help-area .help-content .help-btn {
@@ -6128,7 +6165,9 @@ html {
 
 .project-area .single-project .project-content {
     position: absolute;
-    top: -253px;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: -2;
     opacity: 0;
@@ -6165,7 +6204,7 @@ html {
 }
 
 .project-area .single-project:hover .project-content {
-    top: 115px;
+    top: 50%;
     z-index: 2;
     opacity: 1;
 }
@@ -6275,6 +6314,8 @@ html {
     opacity: 0;
     transition: all ease-in-out 0.4s;
     top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .pricing-area .pricing-item .pricing-top {
@@ -6318,6 +6359,12 @@ html {
     transition: 0.4s;
 }
 
+@media screen and (max-width: 1399px) {
+    .pricing-area .pricing-item .pricing-bottom ul li {
+        font-size: 15px;
+    }
+}
+
 .pricing-area .pricing-item .pricing-bottom ul li::before {
     content: "";
     background-color: hsl(var(--base));
@@ -6346,7 +6393,7 @@ html {
 
 .pricing-area .pricing-item:hover img {
     opacity: 1;
-    top: 135px;
+    top: 50%;
 }
 
 .pricing-area .pricing-item:hover h4 {
@@ -6430,9 +6477,21 @@ html {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1399px) {
+    .team-slider .single-slider .social-icons span {
+        font-size: 23px;
+    }
+}
+
 .team-slider .single-slider:hover .social-icons {
     top: 50%;
     opacity: 1;
+}
+
+@media screen and (max-width: 1399px) {
+    .team-slider .single-slider:hover .social-icons {
+        top: 40%;
+    }
 }
 
 .team-slider .single-slider:hover .bg-member {
