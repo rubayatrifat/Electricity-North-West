@@ -18,6 +18,9 @@
             @include lg-screen {
                 font-size: 20px;
             }
+            @include md-screen {
+                font-size: 27px;
+            }
         }
         p {
             margin-bottom: 30px;

@@ -114,7 +114,8 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 991,
             settings: {
               arrows: false,
-              slidesToShow: 1
+              slidesToShow: 1,
+              dots: false,
             }
           },
           {
@@ -192,7 +193,7 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 991,
             settings: {
               arrows: false,
-              slidesToShow: 1
+              slidesToShow: 2
             }
           },
           {
@@ -230,7 +231,7 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 991,
             settings: {
               arrows: false,
-              slidesToShow: 1
+              slidesToShow: 3
             }
           },
           {
@@ -269,7 +270,7 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 991,
             settings: {
               arrows: false,
-              slidesToShow: 5
+              slidesToShow: 4
             }
           },
           {

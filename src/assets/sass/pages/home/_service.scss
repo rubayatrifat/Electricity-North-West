@@ -10,6 +10,9 @@
     @include lg-screen {
         font-size: 43px;
     }
+    @include md-screen {
+        font-size: 32px;
+    }
 }
 
 .servies-area {

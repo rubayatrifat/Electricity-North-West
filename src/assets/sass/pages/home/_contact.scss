@@ -11,6 +11,10 @@
     p {
         color: #f2f2f2;
         width: 38pc;
+        @include md-screen {
+            width: 27pc;
+            font-size: 15px;
+        }
     }
     .contact-inputs {
         margin-left: 100px;

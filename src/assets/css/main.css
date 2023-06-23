@@ -5903,6 +5903,12 @@ html {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .slider-area .single-slider .banner-content h1 {
+        font-size: 40px;
+    }
+}
+
 .slider-area .single-slider .banner-content p {
     color: #f2f2f2;
     padding: 0 98px 0 0;
@@ -5913,6 +5919,13 @@ html {
 @media screen and (max-width: 1399px) {
     .slider-area .single-slider .banner-content p {
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .slider-area .single-slider .banner-content p {
+        font-size: 11px;
+        line-height: 22px;
     }
 }
 
@@ -6015,6 +6028,12 @@ html {
 @media screen and (max-width: 1199px) {
     .section-title h2 {
         font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-title h2 {
+        font-size: 32px;
     }
 }
 
@@ -6139,6 +6158,12 @@ html {
 @media screen and (max-width: 1199px) {
     .help-area .help-content h3 {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .help-area .help-content h3 {
+        font-size: 27px;
     }
 }
 
@@ -6276,6 +6301,12 @@ html {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .counter-area .counters h4 {
+        font-size: 35px;
+    }
+}
+
 .counter-area .counters span {
     color: #f5f5f5;
 }
@@ -6283,6 +6314,12 @@ html {
 @media screen and (max-width: 1199px) {
     .counter-area .counters span {
         font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .counter-area .counters span {
+        font-size: 11px;
     }
 }
 /* ================= Counter Area End ================= */
@@ -6298,7 +6335,7 @@ html {
 
 .testimonial-area .testimonial-item .bg {
     width: 300px;
-    height: 575px;
+    height: 453px;
     background-color: hsl(var(--base));
     position: absolute;
     z-index: -1;
@@ -6602,6 +6639,13 @@ html {
 .contact-area p {
     color: #f2f2f2;
     width: 38pc;
+}
+
+@media screen and (max-width: 991px) {
+    .contact-area p {
+        width: 27pc;
+        font-size: 15px;
+    }
 }
 
 .contact-area .contact-inputs {

@@ -21,11 +21,17 @@
             @include lg-screen {
                 font-size: 46px;
             }
+            @include md-screen {
+                font-size: 35px;
+            }
         }
         span {
             color: #f5f5f5;
             @include lg-screen {
                 font-size: 14px;
+            }
+            @include md-screen {
+                font-size: 11px;
             }
         }
     }
