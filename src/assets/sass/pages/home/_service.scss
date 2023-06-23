@@ -7,6 +7,9 @@
     @include xl-screen {
         font-size: 45px;
     }
+    @include lg-screen {
+        font-size: 43px;
+    }
 }
 
 .servies-area {

@@ -3,19 +3,12 @@
 .slider-area {
     position: relative;
     .full-request{
-        position: absolute;
-        width: 76%;
-        bottom: -9%;
-        @include xl-screen {
-            width: 91%;
-            bottom: -9%;
-            left: 65px;
-        }
+        margin-top: -140px;
+        position: relative;
         .tag {
             background-color: hsl(var(--base));
             display: table;
             padding: 17px 39px 9px 39px;
-            margin-left: -12px;
             border-radius: 5px 5px 0 0;
             h4 {
                 color: hsl(var(--white));
@@ -24,12 +17,27 @@
         }
         .request-input {
             background-color: hsl(var(--black));
-            padding: 50px 0;
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            .single-input {
+                width: 18%;
+                @include  lg-screen{
+                    width: inherit;
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            }
             i {
                 position: absolute;
-                top: 36%;
-                right: 1%;
+                top: 19px;
+                right: 24px;
                 color: hsl(var(--black)/0.4);
+                font-size: 16px;
+                z-index: -1;
             }
             input {
                 width: 204px;
@@ -64,6 +72,9 @@
                 margin-bottom: 30px;
                 @include xl-screen {
                     font-size: 57px;
+                }
+                @include lg-screen {
+                    font-size: 50px;
                 }
             }
             p {

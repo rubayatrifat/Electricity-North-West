@@ -15,11 +15,18 @@
             @include xl-screen {
                 font-size: 25px;
             }
+            @include lg-screen {
+                font-size: 20px;
+            }
         }
         p {
             margin-bottom: 30px;
             @include xl-screen {
                 font-size: 15px;
+            }
+            @include lg-screen {
+                font-size: 12px;
+                line-height: 20px;
             }
         }
         .help-btn {

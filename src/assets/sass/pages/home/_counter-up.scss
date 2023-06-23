@@ -18,9 +18,15 @@
             color: #fff;
             font-size: 54px;
             font-weight: 600px;
+            @include lg-screen {
+                font-size: 46px;
+            }
         }
         span {
             color: #f5f5f5;
+            @include lg-screen {
+                font-size: 14px;
+            }
         }
     }
 }

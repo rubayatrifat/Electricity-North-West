@@ -184,8 +184,8 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 1199,
             settings: {
               arrows: false,
-              slidesToShow: 1,
-              dots: false,
+              slidesToShow: 2,
+              dots: true,
             }
           },
           {
