@@ -122,7 +122,8 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 767,
             settings: {
               arrows: false,
-              slidesToShow: 1
+              slidesToShow: 1,
+              dots: false,
             }
           }
         ]
@@ -238,7 +239,7 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 767,
             settings: {
               arrows: false,
-              slidesToShow: 1
+              slidesToShow: 2
             }
           }
         ]
@@ -277,7 +278,7 @@ $('.theme-btn').on('mouseenter', function (e) {
             breakpoint: 767,
             settings: {
               arrows: false,
-              slidesToShow: 5
+              slidesToShow: 3
             }
           }
         ]

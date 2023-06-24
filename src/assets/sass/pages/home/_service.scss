@@ -24,6 +24,9 @@
         border-radius: 12px;
         transition: .4s;
         margin-bottom: 55px;
+        @include sm-screen {
+            text-align: center;
+        }
         &:hover {
             background-color: hsl(var(--base));
             box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.22);
@@ -49,6 +52,9 @@
                 object-fit: cover;
                 transform: scale(1);
                 transition: .5s;
+                @include sm-screen {
+                    margin: auto;
+                }
             }
         }
         h3 {

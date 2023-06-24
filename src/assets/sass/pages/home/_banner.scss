@@ -2,6 +2,11 @@
 
 .slider-area {
     position: relative;
+    .subtitle {
+        @include sm-screen {
+            justify-content: left;
+        }
+    }
     .full-request{
         margin-top: -140px;
         position: relative;
@@ -160,6 +165,9 @@
     text-transform: uppercase;
     @include xl-screen {
         font-size: 13px;
+    }
+    @include sm-screen {
+        justify-content: center;
     }
     img {
         margin: 0 10px;

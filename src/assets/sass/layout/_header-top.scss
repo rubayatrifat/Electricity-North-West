@@ -4,6 +4,9 @@
 .header-top {
 	padding: 18px 0;
     background-color: hsl(var(--black));
+    @include sm-screen {
+        display: none;
+    }
     ul {
         display: flex;
         justify-content: end;

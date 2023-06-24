@@ -3,6 +3,16 @@
 .header-area {
 	padding: 20px 0;
     transition: .5s;
+    @include sm-screen {
+        background-color: hsl(var(--black));
+    }
+    .servies-card {
+        i{
+            @include sm-screen {
+                color: #fff;
+            }
+        }
+    }
     &.fixed-header {
         position: sticky;
         top: 0;
@@ -37,12 +47,24 @@
         justify-content: start;
         align-items: center;
         margin-top: 13px;
+        @include sm-screen {
+            margin: 0;
+        }
         li {
             margin-left: 35px;
+            @include sm-screen {
+                display: none;
+            }
             a {
                 font-family: var(--body-font);
                 font-size: 16px;
                 font-weight: 500;
+            }
+        }
+        .menu-logo {
+            display: none;
+            @include sm-screen {
+                display: block;
             }
         }
     }

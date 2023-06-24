@@ -3,6 +3,9 @@
 .counter-area {
     background-color: #15141C;
     padding: 90px 0;
+    @include sm-screen {
+        text-align: center;
+    }
     .light-shape {
         position: absolute;
         top: -29px;

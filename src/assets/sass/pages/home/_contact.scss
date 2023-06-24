@@ -3,6 +3,9 @@
 .contact-area {
     background-color: hsl(var(--base));
     padding: 90px 0;
+    @include sm-screen {
+        text-align: center;
+    }
     .section-title {
         h2 {
             color: hsl(var(--white));
@@ -15,6 +18,10 @@
             width: 27pc;
             font-size: 15px;
         }
+        @include sm-screen {
+            margin: auto;
+            margin-bottom: 30px;
+        }
     }
     .contact-inputs {
         margin-left: 100px;
@@ -26,6 +33,9 @@
             background: transparent;
             color: #efefef;
             border-radius: 5px;
+        }
+        @include sm-screen {
+            margin-left: 0;
         }
         textarea {
             width: 100%;

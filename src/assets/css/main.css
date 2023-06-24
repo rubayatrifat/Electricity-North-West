@@ -3120,6 +3120,18 @@ select.form-control.form--control:has(option) ~ .form--label {
     transition: 0.5s;
 }
 
+@media screen and (max-width: 767px) {
+    .header-area {
+        background-color: hsl(var(--black));
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-area .servies-card i {
+        color: #fff;
+    }
+}
+
 .header-area.fixed-header {
     position: sticky;
     top: 0;
@@ -3155,14 +3167,36 @@ select.form-control.form--control:has(option) ~ .form--label {
     margin-top: 13px;
 }
 
+@media screen and (max-width: 767px) {
+    .main-menu {
+        margin: 0;
+    }
+}
+
 .main-menu li {
     margin-left: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    .main-menu li {
+        display: none;
+    }
 }
 
 .main-menu li a {
     font-family: var(--body-font);
     font-size: 16px;
     font-weight: 500;
+}
+
+.main-menu .menu-logo {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .main-menu .menu-logo {
+        display: block;
+    }
 }
 
 .card-more {
@@ -3298,6 +3332,12 @@ select.form-control.form--control:has(option) ~ .form--label {
 .header-top {
     padding: 18px 0;
     background-color: hsl(var(--black));
+}
+
+@media screen and (max-width: 767px) {
+    .header-top {
+        display: none;
+    }
 }
 
 .header-top ul {
@@ -5807,6 +5847,12 @@ html {
     position: relative;
 }
 
+@media screen and (max-width: 767px) {
+    .slider-area .subtitle {
+        justify-content: left;
+    }
+}
+
 .slider-area .full-request {
     margin-top: -140px;
     position: relative;
@@ -5999,6 +6045,12 @@ html {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .subtitle {
+        justify-content: center;
+    }
+}
+
 .subtitle img {
     margin: 0 10px;
 }
@@ -6050,6 +6102,12 @@ html {
     margin-bottom: 55px;
 }
 
+@media screen and (max-width: 767px) {
+    .servies-area .single-servies {
+        text-align: center;
+    }
+}
+
 .servies-area .single-servies:hover {
     background-color: hsl(var(--base));
     box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.22);
@@ -6082,6 +6140,12 @@ html {
     object-fit: cover;
     transform: scale(1);
     transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+    .servies-area .single-servies .img-wraper img {
+        margin: auto;
+    }
 }
 
 .servies-area .single-servies h3 {
@@ -6273,6 +6337,12 @@ html {
 .counter-area {
     background-color: #15141C;
     padding: 90px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .counter-area {
+        text-align: center;
+    }
 }
 
 .counter-area .light-shape {
@@ -6632,6 +6702,12 @@ html {
     padding: 90px 0;
 }
 
+@media screen and (max-width: 767px) {
+    .contact-area {
+        text-align: center;
+    }
+}
+
 .contact-area .section-title h2 {
     color: hsl(var(--white));
 }
@@ -6648,6 +6724,13 @@ html {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .contact-area p {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
 .contact-area .contact-inputs {
     margin-left: 100px;
 }
@@ -6660,6 +6743,12 @@ html {
     background: transparent;
     color: #efefef;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-area .contact-inputs {
+        margin-left: 0;
+    }
 }
 
 .contact-area .contact-inputs textarea {
