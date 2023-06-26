@@ -6102,7 +6102,7 @@ html {
 .new-banner-style {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 100px 0;
+    padding: 150px 0;
     position: relative;
 }
 
@@ -6157,7 +6157,7 @@ html {
 }
 
 .servies-area {
-    padding: 175px 0 90px 0;
+    padding: 90px 0;
 }
 
 .servies-area .single-servies {
