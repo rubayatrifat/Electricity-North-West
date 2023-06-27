@@ -3853,6 +3853,18 @@ select.form-control.form--control:has(option) ~ .form--label {
     margin-right: 5px;
 }
 
+.blog-sidebar .latest-blog {
+    margin-bottom: 30px;
+}
+
+.blog-sidebar .latest-blog .latest-blog__thumb {
+    margin-bottom: 20px;
+}
+
+.blog-sidebar .latest-blog .latest-blog__thumb img {
+    border-radius: 10px;
+}
+
 /*====================== Comment Style ====================*/
 .comment-list__item:last-child .comment-list__content {
     border-bottom: none;

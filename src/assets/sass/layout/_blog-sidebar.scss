@@ -1,0 +1,11 @@
+.blog-sidebar {
+    .latest-blog {
+        margin-bottom: 30px;
+        .latest-blog__thumb {
+            margin-bottom: 20px;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+}
