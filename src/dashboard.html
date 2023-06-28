@@ -1,5 +1,3 @@
-<!-- meta tags and other links -->
-<!-- Header -->
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -30,20 +28,20 @@
 <body>
 
 <!--==================== Preloader Start ====================-->      
+
+
 <div id="loading">
-   <div id="loading-center">
-         <div id="loading-center-absolute">
-            <div class="loader">
-               <div class="loader__bar"></div>
-               <div class="loader__bar"></div>
-               <div class="loader__bar"></div>
-               <div class="loader__bar"></div>
-               <div class="loader__bar"></div>
-               <div class="loader__ball"></div>
-            </div>
-         </div>
-   </div>
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
+        </div>
+    </div>
 </div>
+ 
+ 
 <!--==================== Preloader End ====================-->
 
 <!--==================== Overlay Start ====================-->
@@ -58,137 +56,109 @@
 <a class="scroll-top"><i class="fas fa-angle-double-up"></i></a>
 <!-- ==================== Scroll to Top End Here ==================== -->
 
+<!-- ================== Header Top area start Here ================= -->
 
-
-
-
-<!--========================== Header section Start ==========================-->
-<div class="header-main-area">
-    <div class="header" id="header">
-        <div class="container position-relative">          
-            <div class="row">
-                <div class="header-wrapper">
-                
-                    <div class="logo-wrapper">
-                        <a href="index.html" class="normal-logo"> <img src="assets/images/logo/logo.png" alt=""></a>
-                        <a href="index.html" class="dark-logo hidden"> <img src="assets/images/logo/dark-logo.png" alt=""></a>
-                    </div>
-        
-                    
-                    <div class="menu-wrapper">    
-                        <ul class="main-menu">
-                            <li><a class='active' href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="faq.html">Portfolio</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li>
-                                <div class="menu-search-wrap--search-icon">
-                                    <i class="fa-solid fa-magnifying-glass header-search-icon"></i>
-                                    <i class="fa-solid fa-xmark close-hide-show"></i>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="menu-right-wrapper">     
-                        <ul>
-                            <li>
-                                <div class="menu-search-wrap">
-                                    <div class="menu-search-wrap--search-icon">
-                                        <i class="fa-solid fa-magnifying-glass header-search-icon"></i>
-                                        <i class="fa-solid fa-xmark close-hide-show"></i>
-                                    </div>
-                                    
-                                    <div class="search-box header-search header-search-hide-show">
-                                        <input type="text" class="form--control" placeholder="Search...">
-                                        <button type="submit" class="search-box__button"><i class="fas fa-search"></i></button>
-                                    </div>
-                                    
-                                </div>
-                            </li>
-                            <li>
-                                <div class="light-dark-btn-wrap ms-1" id="light-dark-checkbox">
-                                    <i class="fas fa-moon mon-icon"></i>
-                                    <i class='fas fa-sun sun-icon'></i>
-                                </div> 
-                            </li>
-                            <li><a class='btn btn--base' href="login.html"><i class="fas fa-user"></i> Login </a></li>
-                            <li><i class="fa-solid fa-bars sidebar-menu-show-hide"></i></li>
-                        </ul>
-                    </div>
-        
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--========================== Header section End ==========================-->
-
-
- <!--========================== Sidebar mobile menu wrap Start ==========================-->
-<div class="sidebar-menu-wrapper">
-    <div class="top-close d-flex align-items-center justify-content-between">
-        <div class="header-wrapper">
-            <div class="logo-wrapper ms-3 mb-1">
-                <div class="logo-wrapper">
-                    <a href="index.html" class="normal-logo" id="normal-logo"> <img src="assets/images/logo/logo.png" alt=""></a>
-                    <a href="index.html" class="dark-logo hidden" id="dark-logo"> <img src="assets/images/logo/dark-logo.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-        <i class="fa-solid fa-xmark close-hide-show"></i>
-    </div>
-    <ul class="sidebar-menu-list">
-        <li class="sidebar-menu-list__item active">
-            <a href="dashboard.html" class="sidebar-menu-list__link"> Home</a>
-        </li>
-        <li class="sidebar-menu-list__item">
-            <a href="about.html" class="sidebar-menu-list__link">About Us</a>
-        </li> 
-        <li class="sidebar-menu-list__item ">
-            <a href="services.html" class="sidebar-menu-list__link">Services </a>
-        </li>
-        <li class="sidebar-menu-list__item">
-            <a href="blog.html" class="sidebar-menu-list__link">Blog</a>
-        </li>
-        <li class="sidebar-menu-list__item">
-            <a href="faq.html" class="sidebar-menu-list__link">Faq</a>
-        </li>
-        <li class="sidebar-menu-list__item">
-            <a href="contact.html" class="sidebar-menu-list__link">Contact</a>
-        </li>
-        <li class="sidebar-menu-list__item ">
-            <a class="btn btn--base mt-2 mb-2 ms-3" href="login.html"><i class="fas fa-user"></i> Login </a>
-        </li>
-    </ul>
-</div>
-<!--========================== Sidebar mobile menu wrap End ==========================-->
-
-<!-- ==================== Breadcumb Start Here ==================== -->
-<section class="breadcumb bg-img">
-    <span class="banner-effect-1"></span>
+<header class="header-top">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <div class="breadcumb__wrapper">
-                    <h2 class="breadcumb__title">Dashboard </h2>
-                    <ul class="breadcumb__list">
-                        <li class="breadcumb__item"><a href="index.html" class="breadcumb__link"> <i class="las la-home"></i> Home</a> </li>
-                        <li class="breadcumb__item"><i class="fas fa-arrow-right"></i></li>
-                        <li class="breadcumb__item"> <span class="breadcumb__item-text"> Dashboard </span> </li>
-                    </ul>
-                </div>
+            <div class="col-xl-5 col-lg-5 col-md-5">
+                <a href="index.html"><img src="assets/images/header-top/logo.png"></a>
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-7">
+                <ul class="social-contract">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <a href="login.html" class="btn btn--base" style="margin-left: 10px;"> <i class="fas fa-user"></i> Login</a>
+                </ul>
             </div>
         </div>
     </div>
-</section>
-<!-- ==================== Breadcumb End Here ==================== -->
+</header>
+
+<!-- ================== Header Top area End Here ================= -->
+
+<!-- ================= Main Header area start Here ============== -->
+
+<header class="header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-9 col-sm-9">
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="servies.html">Services</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="plan.html">Plan</a></li>
+                    <li><a href="contact.html">Contract</a></li>
+                    <div class="menu-logo">
+                        <img src="assets/images/header-top/logo.png">
+                    </div>
+                </ul>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3">
+                <div class="card-more">
+                    <div class="servies-card">
+                        <i class="fa-solid fa-bell noti-icon"></i>
+                        <div class="notification-card">
+                            <h4>Daily Offer</h4>
+                            <div class="notification-item">
+                                <a href="#">
+                                    <p>15% Off in RGB Decorate of Room</p>
+                                     <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                            <div class="notification-item">
+                                <a href="#">
+                                    <p>New System Weading Electric Decoration is now in Super Offer 30% Off</p>
+                                     <i class="fas fa-eye"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-bar">
+            <div class="logo2">
+                <img src="assets/images/header-top/logo2.png" alt="">
+            </div>
+            <span class="menu-txt">Menu :</span>
+            <i class="fa-solid fa-xmark close-btn"></i>
+            <ul class="side-bar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Servies</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contract</a></li>
+            </ul>
+            <div class="policy">
+                <span>Our Tearms and Policy:</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, hic! Amet eos pariatur officia nostrum repellendus mollitia possimus aut, a labore. Dolore, iure? Nisi officia cupiditate dicta eum hic nihil?</p>
+                <a href="#" style="background-color: #fff; color: hsl(var(--base));" class="btn btn--base">
+                    learn more
+                </a>
+            </div>
+            <div class="side-contract">
+                <span class="hot-line">Hotline :</span>
+                <span class="number-email">Number - <p>+00 123 4567 890</p></span>
+                <span class="number-email" style="margin-bottom: 20px;">E-mail - <p>info.mail@company.com</p></span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.4306719082!2d90.25446538835169!3d23.78054897705266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1686292537786!5m2!1sen!2sbd" width="250" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ================= Main Header area end Here ============== -->
 
 <!-- ==================== Dashboard Start Here ==================== -->
- <div class="dashboard py-60 section-bg-two">
+<div class="dashboard py-60 section-bg-two">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-lg-4 pe-xl-4">
@@ -196,13 +166,13 @@
     <div class="dashboard_profile__details">
         <div class="dashboard_profile_wrap">
             <div class="profile_photo">
-                <img src="assets/images/thumbs/team-01.jpg" alt="agent">
+                <img src="assets/images/team/2.png" alt="agent">
                 <div class="photo_upload">
                     <label for="file_upload"><i class="fa-regular fa-image"></i></label>
                     <input id="file_upload" type="file" class="upload_file">
                 </div>
             </div>
-            <h3>Obaydulla</h3>
+            <h3>Rubayat Rifat</h3>
         </div>
         <ul class="sidebar-menu-list">
             <li class="sidebar-menu-list__item active">
@@ -280,146 +250,49 @@
 </div> 
 <!-- ==================== Dashboard End Here ==================== -->
 
-<!-- Footer -->
+<!-- ====================== Footer Area Start Here ===================== -->
 
-<!-- ==================== Footer Start Here ==================== -->
-<footer class="footer-area section-bg-light bg-img" style="background-image: url(assets/images/footer/footer-bg.jpg)">
-    <div class="pb-60 pt-80">
-        <div class="container">
-            <div class="row justify-content-center gy-5">
-                <div class="col-xl-3 col-sm-6">
-                    <div class="footer-item">
-                        <div class="footer-item__logo">
-                            <a href="index.html" class="footer-logo-normal"> <img src="assets/images/logo/logo.png" alt=""></a>
-                            <a href="index.html" class="footer-logo-dark hidden"> <img src="assets/images/logo/dark-logo.png" alt=""></a>
-                        </div>
-                        <p class="footer-item__desc mb-3">Let's make something great together. We are trusted by over 5000+ clients. Join them by using our services and grow your business.</p>
-
-                        <form action="#" autocomplete="off">
-                            <div class="search-box footer w-100">
-                                <input type="text" class="form--control" placeholder="Search...">
-                                <button type="submit" class="btn btn--base btn--sm">Subscribe</button>
-                            </div>
-                        </form>
-
-
+<footer class="footer-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-8" style="margin-bottom: 30px;">
+                <div class="footer-item">
+                    <div class="logo">
+                        <img src="assets/images/header-top/logo.png">
                     </div>
-                </div> 
-                <div class="col-xl-2 col-sm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Userful Link</h5>
-                        <ul class="footer-menu">
-                            <li class="footer-menu__item"><a href="index.html" class="footer-menu__link">Home</a></li>
-                            <li class="footer-menu__item"><a href="food.html" class="footer-menu__link">About Us</a></li>
-                            <li class="footer-menu__item"><a href="sports.html" class="footer-menu__link">Contact Us</a></li>
-                            <li class="footer-menu__item"><a href="sports.html" class="footer-menu__link">Blog</a></li>
-                            <li class="footer-menu__item"><a href="sports.html" class="footer-menu__link">Blog Details</a></li>
-                            <li class="footer-menu__item"><a href="faq.html" class="footer-menu__link">Faq</a></li>
-                        </ul>
-                    </div>
+                    <p>There are many variations of passages of Ipsum available, but the majority suffered alteration in some form randomised words injected.</p>
                 </div>
-                <div class="col-xl-4 col-sm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Latest Feed</h5>
-                        <div class="blog-sidebar">
-                            <div class="latest-blog">
-                                <div class="latest-blog__thumb">
-                                    <a href="blog-details.html"> <img src="assets/images/blog/blog-1.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog__content">
-                                    <h6 class="latest-blog__title"><a href="blog-details.html">Sound Everyday Rutine For Your amet.</a></h6>
-                                    <span class="latest-blog__date">June 23 202</span>
-                                </div>
-                            </div>
-                            <div class="latest-blog">
-                                <div class="latest-blog__thumb">
-                                    <a href="blog-details.html"> <img src="assets/images/blog/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog__content">
-                                    <h6 class="latest-blog__title"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h6>
-                                    <span class="latest-blog__date">June 23 202</span>
-                                </div>
-                            </div>
-                            <div class="latest-blog">
-                                <div class="latest-blog__thumb">
-                                    <a href="blog-details.html"> <img src="assets/images/blog/blog-3.jpg" alt=""></a>
-                                </div>
-                                <div class="latest-blog__content">
-                                    <h6 class="latest-blog__title"><a href="blog-details.html">Lorem ipsum dolor sit amet.</a></h6>
-                                    <span class="latest-blog__date">June 23 202</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-8" style="margin-bottom: 70px;">
+                <div class="footer-item">
+                    <h3>About</h3>
+                    <p>There are many variations of passages of Ipsum available, but the majority suffered alteration in some form randomised words injected.</p>
                 </div>
-                <div class="col-xl-3 col-sm-6">
-                    <div class="footer-item">
-                        <h5 class="footer-item__title">Newsletter</h5>
+            </div>
 
-                        <ul class="footer-contact-menu">
-                            <li class="footer-contact-menu__item"> 
-                                <div class="footer-contact-menu__item-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="footer-contact-menu__item-content">
-                                    <p>15205 North Kierland Blvd.100 Old City House</p>
-                                </div>
-                            </li>
-                            <li class="footer-contact-menu__item"> 
-                                <div class="footer-contact-menu__item-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="footer-contact-menu__item-content">
-                                    <p>democompany@gmail.com</p>
-                                </div>
-                            </li>
-                            <li class="footer-contact-menu__item"> 
-                                <div class="footer-contact-menu__item-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="footer-contact-menu__item-content">
-                                    <p>123 - 456 - 7890 </p>
-                                </div>
-                            </li>
-                        </ul>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-8">
+                <div class="footer-item">
+                    <h3>Contract</h3>
+                    <p>There are many variations of passages of Ipsum available.</p>
+                    <h3 class="number">+00 123 4567 890</h3>
+                    <h3 class="email">info.mail@company.com</h3>
+                </div>
+            </div>
 
-                        <ul class="social-list">
-                            <li class="social-list__item"><a href="https://www.facebook.com" class="social-list__link"><i class="fab fa-facebook-f"></i></a> </li>
-                            <li class="social-list__item"><a href="https://www.twitter.com" class="social-list__link active"> <i class="fab fa-twitter"></i></a></li>
-                            <li class="social-list__item"><a href="https://www.linkedin.com" class="social-list__link"> <i class="fab fa-linkedin-in"></i></a></li>
-                            <li class="social-list__item"><a href="https://www.pinterest.com" class="social-list__link"> <i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-8">
+                <div class="footer-item">
+                    <h3>Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.4306719082!2d90.25446538835169!3d23.78054897705266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1686292537786!5m2!1sen!2sbd" width="312" height="158" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </div>
-  <!-- Footer Top End-->
-  
-    <!-- bottom Footer -->
-    <div class="bottom-footer section-bg py-3">
-        <div class="container">
-            <div class="row gy-2">
-                <div class="col-lg-6 col-md-12">
-                    <div class="bottom-footer-text"> &copy; Copyright 2022 . All rights reserved.</div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="bottom-footer-menu">
-                        <ul>
-                            <li><a href="terms-of-service.html">Privacy Policy</a></li>
-                            <li><a href="terms-of-service.html">Terms of Services</a></li>
-                            <li><a href="terms-of-service.html">Cookie Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </footer>
-  <!-- ==================== Footer End Here ==================== -->
-  
+</footer>
 
-<!-- Jquery js -->
+<!-- ====================== Footer Area End Here ===================== -->
+
+<!-- =============== All JS Here ============== -->
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <!-- Popper js -->
 <script src="assets/js/popper.min.js"></script>
