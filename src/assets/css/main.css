@@ -3118,6 +3118,7 @@ select.form-control.form--control:has(option) ~ .form--label {
 .header-area {
     padding: 20px 0;
     transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
 @media screen and (max-width: 767px) {
