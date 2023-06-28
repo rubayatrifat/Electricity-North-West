@@ -576,6 +576,12 @@ $(document).ready(function() {
 });
 
 
+// Notification Card
+
+$('.noti-icon').on('click', function() {
+  $('.notification-card').toggleClass('show-notif-card')
+  })
+
     /*==================== Sidebar Icon & Overlay js ===============*/
     // $(".dashboard-body__bar-icon").on("click", function() {
     //   $(".sidebar-menu").addClass('show-sidebar'); 

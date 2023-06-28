@@ -3209,8 +3209,58 @@ select.form-control.form--control:has(option) ~ .form--label {
 .card-more .servies-card {
     margin-right: 30px;
     font-size: 18px;
-    cursor: pointer;
     position: relative;
+}
+
+.card-more .servies-card .notification-card {
+    position: absolute;
+    z-index: 99;
+    top: 400%;
+    right: -215px;
+    width: 400px;
+    background: #f0f0f0;
+    padding: 23px 0;
+    border-radius: 10px;
+    transition: 0.3s linear;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.card-more .servies-card .notification-card.show-notif-card {
+    opacity: 1;
+    top: 177%;
+}
+
+.card-more .servies-card .notification-card h4 {
+    text-decoration: underline;
+    margin-left: 28px;
+}
+
+.card-more .servies-card .notification-card .notification-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 28px;
+    transition: 0.2s;
+    height: 70px;
+}
+
+.card-more .servies-card .notification-card .notification-item:hover {
+    background: #ccc;
+}
+
+.card-more .servies-card .notification-card .notification-item p {
+    font-size: 15px;
+    width: 88%;
+    line-height: 30px;
+}
+
+.card-more .servies-card .notification-card .notification-item i {
+    width: 8%;
+}
+
+.card-more .servies-card i {
+    cursor: pointer;
 }
 
 .card-more .servies-card::before {
