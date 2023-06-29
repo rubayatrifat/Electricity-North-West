@@ -29,13 +29,13 @@
                 </a>
             </li>
             <li class="sidebar-menu-list__item ">
-                <a style="color: hsl(var(--base));" href="change-password.html" class="sidebar-menu-list__link">
+                <a href="change-password.html" class="sidebar-menu-list__link">
                 <span class="icon"><i class="fa-solid fa-lock"></i></span>
                 Change Password
                 </a>
             </li>
             <li class="sidebar-menu-list__item">
-                <a href="user-profile.html" class="sidebar-menu-list__link">
+                <a style="color: hsl(var(--base));" href="user-profile.html" class="sidebar-menu-list__link">
                 <span class="icon"><i class="fa-solid fa-user"></i></span>
                     Profile Setting
                 </a>
@@ -61,34 +61,35 @@
                                 <form action="#" method="POST">
                                     <div class="row gy-3">
                                         <div class="col-sm-12">
-                                            <h4>Change Password</h4>
+                                            <h4 class="mb-1">Personal Information</h4>
                                         </div>
                                         <div class="col-sm-12">
-                                            <label for="your-password" class="form--label">Old Password </label>
+                                            <div class="form-group">
+                                                <label for="name" class="form--label"> First Name</label>
+                                                <input type="text" class="form--control" id="name" placeholder=" First Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="lastname" class="form--label"> Last Name</label>
+                                                <input type="text" class="form--control" id="lastname" placeholder=" Last Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="email" class="form--label">Your Email </label>
+                                                <input type="text" class="form--control" id="email" placeholder="Your Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <label for="your-password" class="form--label">Password</label>
                                             <div class="input-group">
                                                 <input id="your-password" type="password" class="form-control form--control" value="Password">
                                                 <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#your-password"></div>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
-                                            <label for="new-password" class="form--label">New Password </label>
-                                            <div class="input-group">
-                                                <input id="new-password" type="password" class="form-control form--control" value="Password">
-                                                <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#new-password"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <label for="again-your-password" class="form--label">Again New Password </label>
-                                            <div class="input-group">
-                                                <input id="again-your-password" type="password" class="form-control form--control" value="Password">
-                                                <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#again-your-password"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <button type="submit" class="btn btn--base">
-                                                Save Now <i class="fa-sharp fa-solid fa-arrow-right"></i>
-                                                <span style="top: 221.609px; left: 132px;"></span>
-                                            </button>
+                                            <button type="submit" class="btn btn--base w-100">Save Now</button>
                                         </div>
                                     </div>
                                 </form>

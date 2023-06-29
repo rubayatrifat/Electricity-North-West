@@ -3227,11 +3227,13 @@ select.form-control.form--control:has(option) ~ .form--label {
     border-radius: 10px;
     transition: 0.3s all ease-in-out;
     opacity: 0;
+    visibility: hidden;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
 .card-more .servies-card .notification-card.show-notif-card {
     opacity: 1;
+    visibility: visible;
     top: 177%;
 }
 
@@ -3409,6 +3411,68 @@ select.form-control.form--control:has(option) ~ .form--label {
     color: hsl(var(--base));
     font-size: 26px;
     margin-top: 6px;
+}
+
+.header-top ul .user-login .user-img img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 3px solid hsl(var(--base)/0.8);
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.header-top ul .user-login .user-img .profile-card {
+    background-color: hsl(var(--white));
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 268px;
+    left: 78%;
+    z-index: 99;
+    top: 17%;
+    padding: 16px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.header-top ul .user-login .user-img .profile-card.show-pro-card {
+    opacity: 1;
+    visibility: visible;
+    top: 8%;
+}
+
+.header-top ul .user-login .user-img .profile-card h4 {
+    text-align: center;
+    border-bottom: 1px solid hsl(var(--base));
+    padding-bottom: 18px;
+}
+
+.header-top ul .user-login .user-img .profile-card ul {
+    display: block;
+}
+
+.header-top ul .user-login .user-img .profile-card ul li {
+    margin: 0;
+    transition: 0.2s;
+}
+
+.header-top ul .user-login .user-img .profile-card ul li:hover {
+    background-color: #e6e6e6;
+}
+
+.header-top ul .user-login .user-img .profile-card ul li:hover a {
+    color: hsl(var(--base));
+}
+
+.header-top ul .user-login .user-img .profile-card ul li a {
+    color: hsl(var(--black));
+    font-size: 16px;
+    margin: 8px 50px;
+}
+
+.header-top ul .user-login .user-img .profile-card ul li a i {
+    margin-right: 7px;
 }
 
 /*====================== Breadcumb Css Start ====================*/

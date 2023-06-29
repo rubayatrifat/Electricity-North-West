@@ -37,6 +37,7 @@
             <div class="object" id="object_three"></div>
             <div class="object" id="object_two"></div>
             <div class="object" id="object_one"></div>
+            <div id="object_zero"></div>
         </div>
     </div>
 </div>
@@ -70,7 +71,31 @@
                     <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <a href="login.html" class="btn btn--base" style="margin-left: 10px;"> <i class="fas fa-user"></i> Login</a>
+                    <div class="user-login">
+                        <a href="login.html" class="btn btn--base go-login-btn" style="margin-left: 10px;"> <i class="fas fa-user"></i> Login</a>
+                        <div class="user">
+                            <div class="user-img">
+                                <img src="assets/images/team/2.png" class="user-main-img">
+                                <div class="profile-card">
+                                    <h4>Rubayat Rifat</h4>
+                                    <ul>
+                                        <li><a href="dashboard.html">
+                                            <i class="fa fa-tachometer-alt"></i>
+                                            Dashboard</a></li>
+                                        <li><a href="change-password.html">
+                                            <i class="fa-solid fa-lock"></i>
+                                            Change Password</a></li>
+                                        <li><a href="user-profile.html">
+                                            <i class="fa-solid fa-user"></i>
+                                            Profile Settings</a></li>
+                                        <li><a href="index.html">
+                                            <i class="fa-solid fa-right-from-bracket"></i>
+                                            Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -170,24 +195,24 @@
                             <h3 class="account-form__title mb-2">Create Your Account </h3>
                             <p class="account-form__desc">Please Provide your valid informations to register!</p>
                         </div>
-                        <form action="#" method="POST">
+                        <form action="login.html">
                             <div class="row gy-3">
                                 <div class="col-sm-6">
                                      <div class="form-group">
                                         <label for="name" class="form--label"> Name</label>
-                                        <input type="text" class="form--control" id="name" placeholder=" Name">
+                                        <input type="text" class="form--control" id="name" placeholder="Name" required>
                                      </div>
                                 </div>
                                 <div class="col-sm-6">
                                      <div class="form-group">
                                         <label for="username" class="form--label">User Name</label>
-                                        <input type="text" class="form--control" id="username" placeholder="User Name">
+                                        <input type="text" class="form--control" id="username" placeholder="User Name" required>
                                      </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="email" class="form--label">Email Address</label>
-                                        <input type="text" class="form--control" id="email" placeholder="Email Address">
+                                        <input type="email" class="form--control" id="email" placeholder="Email Address" required>
                                      </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -209,27 +234,27 @@
                                         <label class="form--label">Phone</label>
                                         <div class="input-group country-code">
                                             <span class="input-group-text" id="basic-addon1">+880</span>
-                                            <input type="text" class="form--control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1">
+                                            <input type="text" class="form--control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1" required>
                                         </div>
                                     </div> 
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="your-password" class="form--label">Password</label>
                                     <div class="input-group">
-                                        <input id="your-password" type="password" class="form-control form--control" value="Password">
+                                        <input id="your-password" type="password" class="form-control form--control" placeholder="Password" required>
                                         <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#your-password"></div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="confirm-password" class="form--label">Confirm Password</label>
                                     <div class="input-group">
-                                        <input id="confirm-password" type="password" class="form-control form--control" value="Confirm Password">
+                                        <input id="confirm-password" type="password" class="form-control form--control" placeholder="Confirm Password" required>
                                         <div class="password-show-hide fas fa-eye toggle-password fa-eye-slash" id="#confirm-password"></div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form--check">
-                                        <input class="form-check-input" type="checkbox" value="" id="remember">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember" required>
                                         <div class="form-check-label">
                                             <label class="" for="remember"> I agree with Licences Info,</label>
                                             <a href="terms-of-service.html" class="text--base">Terms of Service</a>
