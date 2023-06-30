@@ -370,3 +370,27 @@
         }
     }
 }
+
+
+.single-personal-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    margin-bottom: 30px;
+    h5 {
+        font-size: 20px;
+    }
+    .info-only {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        border: 1px solid hsl(var(--base)/.1);
+        padding: 10px 19px 0px 17px;
+        border-radius: 5px;
+        h5 {
+            color: hsl(var(--black) /.5);
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+}

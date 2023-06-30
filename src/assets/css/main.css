@@ -3220,7 +3220,7 @@ select.form-control.form--control:has(option) ~ .form--label {
     position: absolute;
     z-index: 99;
     top: 400%;
-    right: -215px;
+    right: -183px;
     width: 400px;
     background: #f0f0f0;
     padding: 23px 0;
@@ -4501,6 +4501,32 @@ select.form-control.form--control:has(option) ~ .form--label {
 
 .order-wrapper__body .item:first-child {
     border-bottom: 1px solid hsl(var(--base)/0.05);
+}
+
+.single-personal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.single-personal-info h5 {
+    font-size: 20px;
+}
+
+.single-personal-info .info-only {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    border: 1px solid hsl(var(--base)/0.1);
+    padding: 10px 19px 0px 17px;
+    border-radius: 5px;
+}
+
+.single-personal-info .info-only h5 {
+    color: hsl(var(--black)/0.5);
+    font-size: 17px;
+    font-weight: 500;
 }
 
 /*================================ Body Overlay Start ===========================*/
