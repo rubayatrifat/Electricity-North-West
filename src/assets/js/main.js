@@ -595,69 +595,77 @@ $('.noti-icon').on('click', function() {
 
 // ================== Login Logout Works Here ==================
 
-const loginBtn = document.querySelector('#login-btn');
-const goToLoginBtn = document.querySelector('.go-login-btn');
-const userImage = document.querySelector('.user-img');
-const userMainImage = document.querySelector('.user-main-img');
-const profileCard = document.querySelector('.profile-card');
+window.addEventListener('load', () => {
+  const loginBtn = document.querySelector('#login-btn');
+  const goToLoginBtn = document.querySelector('.go-login-btn');
+  const userImage = document.querySelector('.user-img');
+  const userMainImage = document.querySelector('.user-main-img');
+  const profileCard = document.querySelector('.profile-card');
 
-userImage.style.display = 'none';
+  userImage.style.display = "none"
 
-console.log(loginBtn)
-
-window.addEventListener('DOMContentLoaded', checkLoginStatus);
-
-loginBtn.addEventListener('click', hideLoginButton);
-
-function checkLoginStatus() {
-  const isLoggedIn = localStorage.getItem('isLoggedIn');
-
-  if (isLoggedIn === 'true') {
-    hideLoginButton();
-  }
-}
-
-function hideLoginButton() {
-
-  goToLoginBtn.style.display = 'none'; // Hide the login button
-  userImage.style.display = 'block';
-
-
-  // Display the user image if it exists in local storage
-  const userImageSrc = localStorage.getItem('userImage');
-  if (userImageSrc) {
-    userImage.src = userImageSrc;
-    userImage.style.display = 'block';
+  if (loginBtn) {
+    loginBtn.addEventListener('click', hideLoginButton);
   }
 
-  // Set the login status in local storage
-  localStorage.setItem('isLoggedIn', 'true');
-}
+  function checkLoginStatus() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
 
-const imageInput = document.querySelector('#image-input');
-
-imageInput.addEventListener('change', saveImageToLocalStorage);
-
-function saveImageToLocalStorage() {
-  const file = imageInput.files[0];
-  const reader = new FileReader();
-
-  reader.addEventListener('load', function () {
-    localStorage.setItem('userImage', reader.result);
-  });
-
-  if (file) {
-    reader.readAsDataURL(file);
+    if (isLoggedIn === 'true') {
+      hideLoginButton();
+    }
   }
-}
 
-// in the click image
+  function hideLoginButton() {
+    if (goToLoginBtn) {
+      goToLoginBtn.style.display = 'none'; // Hide the login button
+    }
 
+    if (userImage) {
+      userImage.style.display = 'block';
 
-userMainImage.addEventListener('click', () => {
-  profileCard.classList.toggle('show-pro-card')
-})
+      // Display the user image if it exists in local storage
+      const userImageSrc = localStorage.getItem('userImage');
+      if (userImageSrc) {
+        userImage.src = userImageSrc;
+        userImage.style.display = 'block';
+      }
+    }
 
+    // Set the login status in local storage
+    localStorage.setItem('isLoggedIn', 'true');
+  }
+
+  const imageInput = document.querySelector('#image-input');
+
+  if (imageInput) {
+    imageInput.addEventListener('change', saveImageToLocalStorage);
+  }
+
+  function saveImageToLocalStorage() {
+    const file = imageInput.files[0];
+    const reader = new FileReader();
+
+    reader.addEventListener('load', function () {
+      localStorage.setItem('userImage', reader.result);
+    });
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  }
+
+  // Click event for user image
+  if (userMainImage) {
+    userMainImage.addEventListener('click', () => {
+      if (profileCard) {
+        profileCard.classList.toggle('show-pro-card');
+      }
+    });
+  }
+
+  checkLoginStatus();
+});
 
 // ================== Login Logout Works Here ==================
     
