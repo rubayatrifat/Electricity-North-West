@@ -589,20 +589,21 @@ $('.noti-icon').on('click', function() {
     // });
     // $(".sidebar-menu__close, .sidebar-overlay").on("click", function() {
     //   $(".sidebar-menu").removeClass('show-sidebar'); 
-    //   $(".sidebar-overlay").removeClass('show'); 
+    //   $(".sidebar-overlay").removeClass('show');  
     // });
 
 
 // ================== Login Logout Works Here ==================
 
 window.addEventListener('load', () => {
+  const loOutBtn = document.querySelectorAll('#log-out-btn');
   const loginBtn = document.querySelector('#login-btn');
   const goToLoginBtn = document.querySelector('.go-login-btn');
   const userImage = document.querySelector('.user-img');
   const userMainImage = document.querySelector('.user-main-img');
   const profileCard = document.querySelector('.profile-card');
 
-  userImage.style.display = "none"
+  userImage.style.display = 'none';
 
   if (loginBtn) {
     loginBtn.addEventListener('click', hideLoginButton);
@@ -636,6 +637,22 @@ window.addEventListener('load', () => {
     localStorage.setItem('isLoggedIn', 'true');
   }
 
+  function logout() {
+    if (userImage) {
+      userImage.style.display = 'none'; // Hide the user image
+    }
+
+    if (goToLoginBtn) {
+      goToLoginBtn.style.display = 'block'; // Show the login button
+    }
+
+    // Remove the user image from local storage
+    localStorage.removeItem('userImage');
+
+    // Set the login status in local storage
+    localStorage.setItem('isLoggedIn', 'false');
+  }
+
   const imageInput = document.querySelector('#image-input');
 
   if (imageInput) {
@@ -655,6 +672,13 @@ window.addEventListener('load', () => {
     }
   }
 
+  // Click event for logout links
+  if (loOutBtn.length > 0) {
+    loOutBtn.forEach((btn) => {
+      btn.addEventListener('click', logout);
+    });
+  }
+
   // Click event for user image
   if (userMainImage) {
     userMainImage.addEventListener('click', () => {
@@ -668,6 +692,7 @@ window.addEventListener('load', () => {
 });
 
 // ================== Login Logout Works Here ==================
+
     
 
 })(jQuery);

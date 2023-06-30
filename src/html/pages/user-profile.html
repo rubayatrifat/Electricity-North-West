@@ -13,7 +13,7 @@
     <div class="dashboard_profile__details">
         <div class="dashboard_profile_wrap">
             <div class="profile_photo">
-                <img src="assets/images/team/2.png" alt="agent">
+                <img src="assets/images/team/2.png">
                 <div class="photo_upload">
                     <label for="file_upload"><i class="fa-regular fa-image"></i></label>
                     <input id="file_upload" type="file" class="upload_file">
@@ -28,6 +28,12 @@
                     Dashboard
                 </a>
             </li>
+            <li class="sidebar-menu-list__item active">
+                <a href="dashboard.html" class="sidebar-menu-list__link">
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    Personal Info
+                </a>
+            </li>
             <li class="sidebar-menu-list__item ">
                 <a href="change-password.html" class="sidebar-menu-list__link">
                 <span class="icon"><i class="fa-solid fa-lock"></i></span>
@@ -36,12 +42,12 @@
             </li>
             <li class="sidebar-menu-list__item">
                 <a style="color: hsl(var(--base));" href="user-profile.html" class="sidebar-menu-list__link">
-                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                <span class="icon"><i class="fa-solid fa-user-gear"></i></span>
                     Profile Setting
                 </a>
             </li>
             <li class="sidebar-menu-list__item">
-                <a href="index.html" class="sidebar-menu-list__link">
+                <a id="log-out-btn" href="index.html" class="sidebar-menu-list__link">
                 <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
                     Log Out
                 </a>
